@@ -1,0 +1,453 @@
+/* === CORES OFICIAIS DO PROJETO === */
+/* COR BASE - FUNDO PERGAMINHO */
+body {
+    background-color: #f5f1e8;
+    color: #614e30;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* === CONTEÚDO PRINCIPAL - CORRIGIDO E CENTRALIZADO === */
+.conteudo-principal {
+    margin-left: 240px;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    /* 🔥 SCROLL DOURADO DO CONTEÚDO */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #b18005 #f5f1e8;
+}
+
+/* Scroll dourado para webkit (Chrome, Safari, Edge) */
+.conteudo-principal::-webkit-scrollbar {
+    width: 12px;
+}
+
+.conteudo-principal::-webkit-scrollbar-track {
+    background: #f5f1e8;
+    border-radius: 10px;
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb {
+    background-color: #b18005;
+    border-radius: 10px;
+    border: 2px solid #f5f1e8;
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb:hover {
+    background-color: #d4a006;
+}
+
+/* === 🟢 CONTAINER VERDE - BARRA COMPLETA COM CONTEÚDO CENTRALIZADO === */
+.cabecalho-verde {
+    background-color: rgba(19, 32, 32, 0.98);
+    color: #f5f1e8;
+    padding: 40px 20px;
+    margin: -40px -40px 40px -40px; /* 🔥 SOBE ATÉ O TOPO */
+    text-align: center;
+    border-bottom: 3px solid #b18005;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Container interno para centralizar */
+.cabecalho-verde .container-interno {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ESTILOS ESPECÍFICOS DENTRO DO CONTAINER VERDE */
+.cabecalho-verde img {
+    border: 3px solid #b18005;
+    border-radius: 8px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 25px auto;
+    display: block;
+    max-width: 250px;
+    height: auto;
+}
+
+.cabecalho-verde h1 {
+    color: #e6ae20;
+    font-size: 2.3em;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.cabecalho-verde h2 {
+    color: #d4c4a8;
+    font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin: 15px 0 10px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.cabecalho-verde h3 {
+    color: #e6ae20;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cabecalho-verde p {
+    color: #f5f1e8;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* === 🎯 ESTILOS PARA OUTRAS SEÇÕES === */
+
+/* SOBRE O PROJETO - COM BORDA DOURADA */
+#sobre {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #b18005;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* === 📖 INTRODUÇÃO CENTRALIZADA (SEM FUNDO) === */
+#introducao {
+    max-width: 800px; /* 🔥 Mesma largura dos capítulos */
+    margin: 0 auto 40px auto; /* 🔥 Centraliza */
+    padding: 30px;
+    box-sizing: border-box;
+    /* NÃO tem background - fica transparente */
+}
+
+/* GLOSSÁRIO, TABELAS E DIÁRIO - SEM BORDA LATERAL */
+#glossario, #tabelas, #diario-leitura {
+    max-width: 800px;
+    margin: 80px auto 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: none; /* 🔥 GARANTE QUE NÃO TEM BORDA */
+}
+
+/* === SEÇÕES DE CAPÍTULOS (COM BORDA LATERAL DOURADA) === */
+section[id^="capitulo"] {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* CABEÇALHO DO CAPÍTULO - INÍCIO DA BORDA */
+section[id^="capitulo"] .cabecalho-capitulo {
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #b18005; /* 🔥 BORDA COMEÇA AQUI */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+/* PARÁGRAFOS DO CAPÍTULO - CONTINUA A BORDA */
+section[id^="capitulo"] p {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0 30px;
+    border-left: 4px solid #b18005; /* 🔥 BORDA CONTINUA */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section[id^="capitulo"] p:first-of-type {
+    padding-top: 15px; /* 🔥 ESPAÇO ENTRE TÍTULO E PRIMEIRO PARÁGRAFO */
+}
+
+section[id^="capitulo"] p:last-of-type {
+    padding-bottom: 30px; /* 🔥 ESPAÇO FINAL */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === 👑 TÍTULOS REAIS === */
+h1 {
+    color: #b18005d5;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #193232;
+    border-bottom: 2px solid #d4c4a8;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* === 📖 ESTILOS PARA CAPÍTULOS === */
+.cabecalho-capitulo {
+    text-align: center;
+    margin: 40px 0 30px 0;
+    background: linear-gradient(to right, transparent, rgba(230, 174, 32, 0.1), transparent);
+    padding: 20px;
+}
+
+.numero-capitulo {
+    font-size: 1.1em;
+    color: #193232;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.titulo-capitulo {
+    color: #692214;
+    margin-top: 5px;
+    font-size: 1.8em;
+}
+
+/* 🔥 PARÁGRAFOS DOS CAPÍTULOS */
+.capitulo p,
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+    font-size: 1.05em;
+    text-indent: 2em;
+    color: #614e30;
+}
+
+/* === ⚠️ PARÁGRAFO IMPORTANTE (AVISO) === */
+.importante {
+    color: #a72d24; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    margin-top: 40px; 
+    border-top: 2px solid #b18005; 
+    border-bottom: 2px solid #b18005;
+}
+
+/* === 📚 MENU LATERAL - MANTIDO PERFEITO === */
+.sidebar {
+    background-color: rgba(19, 32, 32, 0.98);
+    border-right: 3px solid #b18005;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #b18005;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: #e6ae20;
+    border-bottom: 2px solid #b18005;
+    padding-bottom: 15px;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 35px;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #000003;
+}
+
+.sidebar h4 {
+    color: #d4c4a8;
+    font-size: 0.95em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #b18005;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 6px 0;
+    position: relative;
+    padding-left: 20px;
+    min-height: 20px;
+}
+
+.sidebar li::before {
+    content: "◇";
+    color: #b18005;
+    font-size: 1.2em;
+    padding: 4px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+.sidebar a {
+    color: #d4c4a8;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar a:hover {
+    color: #e6ae20;
+    padding-left: 10px;
+}
+
+/* === 📱 RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    .menu-lateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .cabecalho-verde {
+        padding: 20px 15px;
+        margin: 0 0 30px 0;
+    }
+    
+    .cabecalho-verde h1 {
+        font-size: 1.8em;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
+
+/* === 🍔 MENU HAMBÚRGUER MOBILE === */
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    background: rgba(19, 32, 32, 0.95);
+    border: 2px solid #b18005;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+    background: rgba(19, 32, 32, 1);
+    border-color: #e6ae20;
+}
+
+.hamburger span {
+    width: 20px;
+    height: 2px;
+    background: #e6ae20;
+    margin: 2px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Overlay para fechar menu */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+
+/* === 📱 RESPONSIVIDADE ATUALIZADA === */
+@media (max-width: 768px) {
+    /* Mostra hambúrguer em mobile */
+    .menu-mobile {
+        display: block;
+    }
+    
+    /* Esconde sidebar por padrão em mobile */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        width: 280px;
+    }
+    
+    /* Quando menu está ativo */
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    /* Ajusta conteúdo principal */
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 60px 20px 20px 20px;
+    }
+    
+    .cabecalho-verde {
+        padding: 20px 15px;
+        margin: 0 0 30px 0;
+    }
+    
+    .cabecalho-verde h1 {
+        font-size: 1.8em;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
