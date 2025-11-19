@@ -51,20 +51,20 @@ Este projeto representa minha **jornada de aprendizado em desenvolvimento front-
 <div align="center">
 
 ### 🖥️ Layout Desktop
-![Layout Desktop](layout-desktop1.png)
+![Layout Desktop](./assets/imagem/layout-desktop1.png)
 
 ### 📱 Layout Mobile Responsivo
-![Layout Mobile](layout-mobile1.png)
+![Layout Mobile](./assets/imagem/layout-mobile1.png)
 
 
 ### 💻 Estrutura de Código Organizada
-![Estrutura do Código](code-structure-html.png)
+![Estrutura do Código](./assets/imagem/code-structure-html.png)
 
 ### 🎮 Pixel Arts Exclusivas
 <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0;">
-  <img src="estalagem-pedra-no-camiho.png" width="80" alt="Estalagem Pedra no Caminho">
-  <img src="readme-image.png" width="80" alt="Alaúde do Kvothe">
-  <img src="trupe 4.png" width="80" alt="TrupeLivro">
+  <img src="./assets/imagem/estalagem-pedra-no-camiho.png" width="80" alt="Estalagem">
+  <img src="./assets/imagem/book.png" width="80" alt="Alaúde">
+  <img src="./assets/imagem/trupe1.png" width="80" alt="Trupe">
 </div>
 
 </div>
