@@ -261,10 +261,26 @@ Adoto a prática de **commits frequentes** para demonstrar:
 
 ## 📞 Contato
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/romaonanda/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NandaRomao)
+<p align="center">
+  <a href="https://www.linkedin.com/in/romaonanda/" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/linkedin.png" width="50" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/NandaRomao" target="_blank">
+    <img src="https://img.icons8.com/ios-glyphs/60/FFFFFF/github.png" width="50" alt="GitHub"/>
+  </a>
+  <a href="mailto:fer.romao5@gmail.com">
+    <img src="https://img.icons8.com/color/48/000000/gmail.png" width="50" alt="Gmail"/>
+  </a>
+</p>
 
-**"Palavras são luz para a mente e fogo para a alma."** - Artefano
+<br>
+
+
+<div align="center">
+  <i>"Palavras são luz para a mente e fogo para a alma." - Artefano</i>
+</div>
+
+
 
 ---
 *Desenvolvido com 💖 e muito chocolate (pois não gosto de café), assim como o Kvothe precisa para suas simpatias*
