@@ -40,9 +40,10 @@ Todos os direitos reservados a **Patrick Rothfuss**
 
 Este projeto representa minha **jornada de aprendizado em desenvolvimento front-end**, unindo minha paixão por tecnologia e literatura. Desenvolvido como uma fan page educacional e imersiva, serve como campo de prática para tecnologias modernas com foco no mercado brasileiro.
 
-**Status:** 🚧 Desenvolvimento Ativo  
+**Status:** 🚧 Desenvolvimento Ativo *(atualizado em 26/12/2025)*  
+**Capítulos:** 📖 25/92 (primeiras páginas)  
 **Stack Principal:** HTML5, CSS3, JavaScript Vanilla  
-**Próxima Fase:** React.js
+**Última Feature:** 🛒 Aviso de compra com links de afiliado
 
 ---
 
@@ -88,10 +89,12 @@ Este projeto representa minha **jornada de aprendizado em desenvolvimento front-
 - **Layout Adaptativo** - Funciona em todos os dispositivos
 
 #### **Conteúdo Organizado**
-- **Capítulos Estruturados** - Com avisos de direitos autorais
-- **Glossário Interativo** - Termos da obra organizados
+- **25 Capítulos Estruturados** - Com primeiras páginas de cada capítulo
+- **Aviso de Compra Profissional** - Links Amazon/Shopee após capítulo 25
+- **Glossário Interativo** - Termos da obra organizados em tabelas
 - **Seção de Dados** - Personagens e timeline da história
 - **Pixel Arts Exclusivas** - Arte digital personalizada
+- **Diário de Leitura** - Formulário com checkboxes, range, select
 
 ### 🚧 **EM DESENVOLVIMENTO**
 
@@ -193,11 +196,12 @@ npx serve
 
 ## 📈 Roadmap de Desenvolvimento
 
-### **🎯 Curto Prazo (2-3 semanas)**
-- [ ] Finalizar conteúdo dos capítulos restantes
-- [ ] Implementar sistema de comentários local
-- [ ] Criar glossário interativo com busca
-- [ ] Adicionar mais pixel arts de personagens
+### **🎯 Curto Prazo (Fim de 2025)**
+- ✅ 25 capítulos com primeiras páginas
+- ✅ Aviso de compra profissional (Amazon/Shopee)
+- [ ] Sistema de usuários básico (localStorage)
+- [ ] Persistência do ponto de leitura
+- [ ] Deploy no GitHub Pages
 
 ### **🚀 Médio Prazo (1 mês)**
 - [ ] Migração para React + Vite
