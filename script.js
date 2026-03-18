@@ -27,3 +27,34 @@ document.querySelectorAll('.sidebar a').forEach(link => {
         }
     });
 });
+// ========== SISTEMA DE USUÁRIOS ==========
+
+function loginUser() {
+    const name = document.getElementById('user-name-input').value;
+    if (name) {
+        localStorage.setItem('readerName', name);
+        updateUserDisplay();
+    }
+}
+
+function logoutUser() {
+    localStorage.removeItem('readerName');
+    updateUserDisplay();
+}
+
+function updateUserDisplay() {
+    const name = localStorage.getItem('readerName');
+    if (name) {
+        document.getElementById('user-login').style.display = 'none';
+        document.getElementById('user-info').style.display = 'block';
+        document.getElementById('display-name').textContent = name;
+    } else {
+        document.getElementById('user-login').style.display = 'block';
+        document.getElementById('user-info').style.display = 'none';
+    }
+}
+
+// Executar quando a página carregar
+document.addEventListener('DOMContentLoaded', updateUserDisplay);
+
+// ========== FIM SISTEMA DE USUÁRIOS ==========
