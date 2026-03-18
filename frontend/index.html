@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-livro.css">
+    <title>O Nome do Vento - Meu estudo HTML</title>
+</head>
+<body>
+
+    <!-- ========== MENU HAMBÚRGUER MOBILE ========== -->
+<div class="menu-mobile">
+    <button class="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
+
+    <!-- ========== MENU LATERAL ========== -->
+     <nav class="sidebar" id="sidebar">
+        <h3>Navegação</h3>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#introducao">Introdução</a></li>
+        </ul>
+        <h4>Capítulos - Livro 1</h4>
+        <ul>
+            <li><a href="#capitulo1">Capítulo 1</a></li>
+            <li><a href="#capitulo2">Capítulo 2</a></li>
+            <li><a href="#capitulo3">Capítulo 3</a></li>
+            <li><a href="#capitulo4">Capítulo 4</a></li>
+            <li><a href="#capitulo5">Capítulo 5</a></li>
+            <li><a href="#capitulo6">Capítulo 6</a></li>
+            <li><a href="#capitulo7">Capítulo 7</a></li>
+            <li><a href="#capitulo8">Capítulo 8</a></li>
+            <li><a href="#capitulo9">Capítulo 9</a></li>
+            <li><a href="#capitulo10">Capítulo 10</a></li>
+            <li><a href="#capitulo11">Capítulo 11</a></li>
+            <li><a href="#capitulo12">Capítulo 12</a></li>
+            <li><a href="#capitulo13">Capítulo 13</a></li>
+            <li><a href="#capitulo14">Capítulo 14</a></li>
+            <li><a href="#capitulo15">Capítulo 15</a></li>
+            <li><a href="#capitulo16">Capítulo 16</a></li>
+            <li><a href="#capitulo17">Capítulo 17</a></li>
+            <li><a href="#capitulo18">Capítulo 18</a></li>
+            <li><a href="#capitulo19">Capítulo 19</a></li>
+            <li><a href="#capitulo20">Capítulo 20</a></li>
+            <li><a href="#capitulo21">Capítulo 21</a></li>
+            <li><a href="#capitulo22">Capítulo 22</a></li>
+            <li><a href="#capitulo23">Capítulo 23</a></li>
+            <li><a href="#capitulo24">Capítulo 24</a></li>
+            <li><a href="#capitulo25">Capítulo 25</a></li>
+            <!-- ... até Capítulo 92 ... -->
+        </ul>
+        <h4>Recursos Adicionais</h4>
+        <ul>
+            <li><a href="#glossario">Glossário</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#diario-leitura">Meu Diário de Leitura</a></li>
+        </ul>
+
+    <hr class="separador-menu">
+    <!-- ========== SEÇÃO DO USUÁRIO ========== -->
+<div class="minha-conta">
+    <h4>Minha Conta</h4>
+    <p><a href="login.html">Clique aqui para fazer login</a></p>
+</div>
+    
+    <!-- Se logado -->
+    <div id="user-info" style="display: none;">
+        <p>Olá, <span id="display-name"></span>!</p>
+        <button onclick="logoutUser()">Sair</button>
+    </div>
+</div>
+<!-- ========== FIM SEÇÃO USUÁRIO ========== -->
+
+<hr class="separador-menu">  <!-- Esta linha já deve existir -->
+
+     <div class="contato-sidebar">
+    <h4>📞 Contato</h4>
+    
+    <div class="links-contato">
+        <a href="https://www.linkedin.com/in/romaonanda/" target="_blank" class="btn-contato linkedin">
+            <span class="icone">💼</span> LinkedIn
+        </a>
+        
+        <a href="https://github.com/NandaRomao" target="_blank" class="btn-contato github">
+            <span class="icone">💻</span> GitHub
+        </a>
+        
+        <a href="mailto:fer.romao5@gmail.com" class="btn-contato email">
+            <span class="icone">📧</span> E-mail
+        </a>
+    </div>
+    
+    <div class="citacao-sidebar">
+        <p>"Palavras são luz para a mente e fogo para a alma."</p>
+        <cite>- Artefano</cite>
+    </div>
+    
+    <div class="creditos-sidebar">
+        <p>🌸 Made by Mokshyaa 🌸</p>
+        <p class="dev-note">"Algo belo que nasce da escuridão."</p>
+    </div>
+</div>          
+     </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+<div class="conteudo-principal">
+
+    <!-- ========= HEADER VERDE (SEU CONTAINER BONITO) ========= -->
+    <header class="cabecalho-verde">
+        <div class="container-interno">
+            <img src="assets/imagem/capa.jpg" alt="Capa do livro O Nome do Vento" width="250">
+            <h1>O NOME DO VENTO</h1>
+            <h2>A Crônica do Matador do Rei: Primeiro Dia</h2>
+            <h3>Autor: Patrick Rothfuss</h3>
+        </div>
+    </header>
+
+    <!-- ========= SOBRE O PROJETO ========= -->
+    <section id="sobre">
+        <header>
+            <h2>Sobre Este Projeto</h2>
+        </header>
+
+        <p><strong>Livro Utilizado:</strong> "O Nome do Vento" de Patrick Rothfuss</p>
+        <p><strong>Projeto:</strong> Aprender HTML, CSS e JavaScript na prática com projeto real.</p>
+
+        <!-- ... resto do conteúdo sobre ... -->
+    </section>
+
+    <!-- ========= INTRODUÇÃO AO LIVRO ========= -->
+ <section id="introducao">
+        <header>
+            <h2>Introdução</h2>
+        </header>
+
+        <!-- ========= CONTEUDO INTRODUÇÃO ========= -->
+        <p>"O Nome do Vento" é o primeiro livro da trilogia A Crônica do Matador do Rei, escrita por Patrick Rothfuss e publicada originalmente em 2007. A obra foi trazida ao Brasil e traduzida para o português pela Editora Arqueiro, tornando-se um fenômeno da literatura de fantasia contemporânea e conquistando milhões de leitores ao redor do mundo.</p>
+
+        <p>A história é narrada por Kvothe, um lendário arcanista, músico e aventureiro que agora vive disfarçado como um simples hospedeiro chamado Kote, proprietário da Estalagem Pedra no Caminho. Quando um cronista o encontra, Kvothe concorda em contar sua verdadeira história ao longo de três dias.</p>
+
+        <p>Este primeiro livro narra o "Primeiro Dia" dessa história: desde sua infância feliz viajando com a trupe itinerante Edema Ruh, passando pela tragédia que destruiu sua família, até sua luta pela sobrevivência nas ruas de Tarbean e, finalmente, sua jornada para se tornar o mais jovem estudante admitido na prestigiosa Universidade.</p>
+
+        <p>O livro é celebrado por sua prosa poética, construção de mundo detalhada, sistema de magia único e a profundidade emocional da narrativa. Rothfuss tece uma trama que é ao mesmo tempo épica e intimista, explorando temas como perda, vingança, conhecimento e o poder das histórias.</p>
+
+        <p class="importante"><em><strong>⚠️ AVISO IMPORTANTE:</strong> Esta é uma obra de ficção. Os trechos apresentados neste site são apenas para fins educacionais e de demonstração técnica. Se você se encantou com as pequenas partes lidas aqui, adquira a versão original completa da obra. Apoie o autor Patrick Rothfuss e a Editora Arqueiro comprando o livro em livrarias físicas, online ou no site oficial da editora. A experiência completa desta jornada épica só pode ser vivida através da obra integral!</em></p>
+        <!-- <- FECHA INTRODUÇÃO> -->
+    </section>
+
+    <!-- ========= CAPÍTULOS 1 ========= -->
+    <section id="capitulo1">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 1</div>
+            <h2 class="titulo-capitulo">Um lugar para demônios</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 1 ... -->
+        <p>Era noite de Caedes e o grupo de praxe se reunia na Pousada Marco do Percurso. Cinco pessoas não chegavam a ser propriamente uma grande aglomeração, mas eram tudo o que a hospedaria andava recebendo nos últimos tempos, dada a situação vigente.</p>
+
+        <p>O velho Cob cumpria seu papel de contador de histórias e distribuidor de conselhos. Os homens no bar bebericavam e escutavam. No quarto dos fundos, um jovem hospedeiro se postava fora da visão deles, atrás da porta, sorrindo ao ouvir os detalhes de uma história familiar.</p>
+
+        <p>- Quando acordou, o Grande Taborlin descobriu-se trancado numa torre alta. Tinham levado sua espada e tirado suas ferramentas: chave, moeda e vela, tudo se fora. Mas isso não era o pior, vocês sabem... - Cob fez uma pausa para aumentar o efeito - ... porque as lamparinas da parede emitiam uma chama azul!</p>
+
+        <p>Graham, Jake e Shep acenaram com a cabeça, absortos. Os três amigos haviam crescido juntos, ouvindo as histórias de Cob e ignorando seus conselhos.</p>
+
+        <p>Cob olhou de perto para o membro mais novo e mais atento de sua pequena platéia, o aprendiz de ferreiro.</p>
+
+        <p>- Sabe o que isso quer dizer garoto?</p>
+
+        <p>Todos o chamavam de "garoto", apesar de ele ser um palmo mais alto que qualquer um dos presentes. Sendo as cidadezinhas como são, o mais provável era que ele continuasse a ser "garoto" até ficar com a barba farta ou ensanguentar o nariz de alguém por causa disso.</p>
+
+        <p>O aprendiz balançou a cabeça devagar:</p>
+
+        <p>- O Chandriano.</p>
+
+        <p>- Isso mesmo - disse Cob, com ar de aprovação. - O Chandriano. Todo mundo sabe que o fogo azul é um dos sinais do grupo. Pois então ele estava...</p>
+
+        <p>- Mas como foi que eles o acharam? - interrompeu o garoto. - E por que não o mataram quando tiveram chance?</p>
+
+        <p>- Cale a boca, você terá todas as respostas antes do final - repreendeu Jake. - Deixe ele contar a história.</p>
+
+        <p>- Não precisa falar assim, Jake - interpôs Graham. - O garoto só está curioso. Tome a sua bebida.</p>
+
+        <p>- Já tomei a minha bebida - resmungou Jake. - Preciso de outra, mas o hospedeiro ainda está esfolando ratos no quarto dos fundos. Ei! - exclamou, elevando a voz e batendo com o caneco vazio no tampo do bar de mogno. - Tem gente com sede aqui!</p>
+
+        <p><em>Continua...</em></p>
+    </section>
+    <!-- <- FECHA CAPÍTULO 1 -->
+
+        <!-- ========== CAPÍTULO 2 ========== -->
+    <section id="capitulo2">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 2</div>
+            <h2 class="titulo-capitulo">Um lindo dia</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 2 ... -->
+         <p>Era um daqueles dias perfeitos de outono tão comuns nas histórias e tão raros na vida real. O tempo estava quente e seco, ideal para amadurecer um campo de trigo ou de milho. Dos dois lados da estrada as árvores mudavam de cor: os choupos altos ganhavam um tom amarelo-amanteigado, enquanto as sumagreiras que invadiam o caminho se tingiam de um vermelho violento. Só os velhos caralhos pareciam relutar em desistir do verão e suas folhas permaneciam mescladas de dourado e verde.</p>
+
+         <p>No cômputo geral, não se poderia esperar um dia mais agradável para que meia dúzia de ex-soldados munidos de arcos de caça tirassem de um sujeito tudo o que ele possuía.</p>
+
+         <p>- Ela não é lá grande coisa como montaria, senhor - disse o Cronista. - É pouco melhor que um animal de tração, e quando chove ela...</p>
+
+         <p>O homem interrompeu com um gesto ríspido.</p>
+
+         <p>- Escute aqui, amigo, o exército do rei paga um bom dinheiro por qualquer coisa que tenha quatro patas e pelo menos um olho. Se você fosse doido varrido e montasse um cavalinho de pau pela estrada, mesmo assim eu o tomaria de suas mãos.</p>
+
+         <p>O líder do grupo tinha um ar de comando. O Cronista calculou que devia ter sido um oficial subalterno não fazia muito tempo.</p>
+
+         <p>- Pule fora - disse o homem, com ar sério. - Vamos resolver logo isso e você pode seguir o seu caminho.</p>
+
+         <p>O Cronista desceu da égua. Já tinha sido assaltado antes e sabia quando não havia nada a ganhar com uma discussão. Aqueles sujeitos entendiam do riscado. Não desperdiçariam energia nem bravatas com ameaças vãs. Um deles examinou a égua, verificando os cascos, os dentes e os arreios. Outros dois vasculharam os alforjes com eficiência militar, dispondo no chão todas as posses mundanas do Cronista: dois cobertores, uma capa com capuz, a sacola achatada de couro e sua mochila pesada e bem fornida.</p>
+
+         <p>- É só isso comandante - disse um dos homens. - Exceto por uns 9 quilos de aveia.</p>
+
+         <p>O comandante se ajoelhou e abriu a sacola chata de couro, espiando seu interior.</p>
+
+         <p>- Aí é só papel e algumas penas - disse o Cronista.</p>
+
+         <p>O comandante virou para trás, olhando-o por cima do ombro.</p>
+
+         <p>- Quer dizer que você é escriba?</p>
+
+         <p>O Cronista assentiu com a cabeça.</p>
+
+         <p>- É o meu ganha-pão, senhor. E não tem serventia real para o senhor.</p>
+
+         <p><em>Continua...</em></p>
+         </section>
+          <!-- <- FECHA CAPÍTULO 2 -->
+
+        <!-- ========== CAPÍTULO 3 ========== -->
+        <section id="capitulo3">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 3</div>
+            <h2 class="titulo-capitulo">Madeira e palavra</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 3 ... -->
+        <p>Kote folheava distraidamente as páginas de um livro, procurando ignorar o silêncio da hospedaria deserta, quando a porta se abriu e Graham entrou de costas no salão.</p>
+
+        <p>- Acabei de terminar - disse, manobrando com um cuidade exagerado por entre o labirinto de mesas. - Eu ia trazê-lo ontem à noite, mas pensei: "Mais uma última demão de óleo, polir e deixar secar." não posso dizer que eu me arrependa. E pronto, damas e cavalheiros, é a coisa mais bonita que estas mãos já fizeram!</p>
+
+        <p>Uma pequena ruga se formou entre as sobrancelhas do hospedeiro. Depois, ao ver o embrulho achatado nos braços do homem, seu rosto se iluminou.</p>
+
+        <p>- Ahhh! O suporte de madeira! - exclamou, com um sorriso cansado. - Desculpe, Graham. Fazia tanto  tempo que eu quase tinha esquecido.</p>
+
+        <p>Graham lançou-lhe um olhar meio esquisito.</p>
+
+        <p>- Quatro meses não são muito para uma madeira que vem lá de Aryen, não com as estradas ruins do jeito que andam.</p>
+
+        <p>- Quatro meses - repetiu Kote. Ele viu que Graham o observava e se apressou a acrescentar: - Isso pode ser uma vida, quando se está à espera de alguma coisa. - Tentou dar um sorriso confiante, mas saiu amarelo.</p>
+
+        <p>Na verdade o próprio Kote parecia meio caído. Não exatamente sem saúde, mas encovado. Abatido. Como uma planta transplantada para o tipo errado de solo e que, na falta de alguma coisa vital, começa a murchar.</p>
+
+        <p>Graham notou a diferença. Os gestos do hospedeiro não eram tão extravagantes. A voz não estava tão grave, nem os olhos lumminosos como um mês antes. A cor parecia mais opaca. Estavam menos cor de espuma-do-mar , menos verde-grama do que tinham sido. Agora, lembravam musgo ou o fundo de uma garrafa de vidro verde. e o cabelo, que costumava brilhar com a cor da chama, parecia agora... vermelho. Apenas cor de cabelo ruivo, na verdade.</p>
+
+        <p>Kote afastou o tecido e examinou o que havia por baixo. A madeira tinha um tom escuro de carvão, com veios negros, pesada como uma lâmina de ferro. Três ganchos escuros tinha sido presos acima de uma palavra gravada a cinzel.</p>
+
+        <p>- "<em>Insensatez</em>"- leu Graham. - Nome esquisito para uma espada.</p>
+
+        <p>Kote assentiu com a cabeça, mantendo o rosto cuidadosamente inexpressivo.</p>
+
+        <p>- Quanto lhe devo? - perguntou baixinho.</p>
+
+        <p>Graham pensou um instante.</p>
+
+        <p><em>Continua...</em></p>
+         </section>
+        <!-- <- FECHA CAPÍTULO 3 -->
+
+         <!-- ========== CAPÍTULO 4 ========== -->
+        <section id="capitulo4">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 4</div>
+            <h2 class="titulo-capitulo">A meio caminho de Nalgures</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 4 ... -->
+        <p>O Cronista andou. Tinha mancado na véspera, mas, nesse dia, não havia nenhuma parte de seus pés que não doesse, de modo que mancar não adiantva. Ele procurara cavalos no Vau do Abade e em Rannish, oferecendo preços escandalosos até pelas montarias mais alquebradas. Mas, em cidadezinhas como aquelas, ninguém tinha cavalos sobrando, especialmente com a proximidade da colheita.</p>
+
+        <p>Apesar da árdua caminhada do dia inteiro, ele ainda estava na estrada quando caiu a noite, transformando a via esburacada num campo de tropeços. Após duas horas tateando no escuro, o Cronista viu uma luz bruxeleando entre as árvores e abandonou qualquer ideia de chegar a Nalgures naquela noite, concluindo que a hospitalidade de uma fazenda seria muito bem-vinda.</p>
+
+        <p>Saiu da estrada e se entranhou por entre as árvores, em direção à luz. Mas o fogo estava mais longe do que ele havia pensado, e era maior. Não era a luz dos lampiões de uma casa, nem das fagulhas de uma pequena fogueira de acampamento. Era uma grande fogueira rugindo entre as ruínas de uma velha casa, pouco mais que duas paredes de pedra em vias de desmoronar. Encolhido no canto formado pelas paredes estava um homem. Usava uma capa pesada com um capuz, embrulhando-se nela como se fosse o auge do inverno,e não uma noite amena de outono.</p>
+
+        <p>As esperanças do Cronista aumentaram à visão de um pequeno fogareiro com uma panela pendurada em cima. Ao se aproximar, porém, ele captou um cheiro pútrido, misturado com a fumaça da lenha. Fedia a cabelo queimado e flores apodrecidas. Em dois tempos o Cronista resolveu que, o que quer que o homem estivesse cozinhando naquela panela de ferro, ele não gostaria  de comer. No entanto, até um lugar junto a uma fogueira já seria melhor do que se enroscar à beira da estrada.</p>
+
+        <p>Entrou no círculo de luz.</p>
+
+        <p>- Eu vi a sua fo... - começou a dizer. Parou ao ver a figura pôr-se de pé um salto, segurando uma espada com as dus mãos. Não, uma espada não, uma espécie de porrete comprido e escuro, de formato regular demais para sesr um pedaço de lenha.</p>
+
+        <p>O Cronista estancou.</p>
+
+        <p>- Eu só estava procurando um lugar para dormir - apressou-se a dizer, apertando inconscientemente o aro de ferro pendurado em seu pescoço. - Não quero criar problemas. Vou deixá-lo com o seu jantar.- E deu um passo atrás.</p>
+
+        <p>A figura relaxou e arriou o porrete, que raspou metalicamente numa pedra.</p>
+
+        <p><em>Continua...</em></p>
+        </section>
+        <!-- <- FECHA CAPÍTULO 4 -->
+
+         <!-- ========== CAPÍTULO 5 ========== -->
+        <section id="capitulo5">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 5</div>
+            <h2 class="titulo-capitulo">Notas</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 5 ... -->
+        <p>Passava muito da meia-noite quando Kote retornou a Nalgures com o corpo flácido do Cronista atravessado sobre seus ombros lacerados. As casas e lojas da cidade estavam escuras e silenciosas, mas a Marco do Percurso irradiava luz.</p>
+
+        <p>Bast se postava à porta, praticamente daçando de irritação. Ao avistar a figura que se aproximava, saiu correndo pela ra, agitndo com raiva um pedaço de papel.</p>
+
+        <p>- Um <em>bilhete</em>? Você sai sorrateiramente e me deixa um bilhete w - sibilou, furioso. - O que eu sou: uma prostituta de beira de cais?</p>
+
+        <p>Kote se virou e encolheu os ombros, deixando os corpo amolecido do Cronista cair nos braços de Bast.</p>
+
+        <p>Eu sabia que você só faria discutir comigo, Bast.</p>
+
+        <p>O rapaz segurou o Cronista sem dificuldade.</p>
+
+        <p>- E nem sequer foi um <em>bom</em> bilhete. "Se você estiver lendo isto, é provável que eu tenha morrido." Que espécie de bilhete é esse?</p>
+
+        <p>- Não era para você achá-lo antes do amanhecer - retrucou Kote, cansado, enquanto os dois começavam a andar pela rua em direção à hospedaria.</p>
+
+        <p>Bast baxou os olhos para o homem que carregava nos braços, como se o notasse pela primeira vez.</p>
+
+        <p>- Quem é este? - perguntou. Sacudiu-o um pouco, fitando-o com ar curioso antes de jogá-lo com desenvoltura sobre um dos ombros, feito um saco de aniagem.</p>
+
+        <p>- Um pobre idiota que por acaso estva na estrada na hora errada - respondeu Kote com indiferença. - Não o sacuda demais. Pode ser que a cabeça dele esteja um pouco solta.</p>
+
+        <p>- Para que diabos você escapuliu em surdina, afinal? - perguntou Bast ao entrar na pousada. - Se ia me deixar um bilhete, pelo menos ele devia me dizer o que... </p>
+
+        <p>Os olhos de Bast se arregalaram ao ver Kote à luz da hospedaria, pálido e todo riscado de sangue e terra.</p>
+
+        <p>´Pode se preocupar, se quiser - disse o hospedeiro em tom seco. - É exatamente tão ruim quanto parece.</p>
+
+        <p>- Você saiu para caçá-los não foi? - Bast sibilou e logo depois arregalou os olhos.</p>
+
+        <p>- Não, você ficou com um pedaço daquele que o Carter matou. Não posso acreditar. Você mentiu pra mim. Pra <em>mim!</em></p>
+
+        <p>Kote deu um suspiro, arrastando-se em direção à escada.</p>
+
+        <p>- Você está aborrecido com a mentira ou com o fato de não ter me apanhado? - perguntou, começando a subir os degraus.</p>
+
+        <p><em>Continua...</em></p>
+        </section>  <!-- <- FECHA CAPÍTULO 5 -->
+
+         <!-- ========== CAPÍTULO 6 ========== -->
+        <section id="capitulo6">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 6</div>
+            <h2 class="titulo-capitulo">O preço da recordação</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 6 ... -->
+         <p>Logo após o anoitecer do dia seguinte, o Cronista desceu a escada que dava no salão da Pousada Marco do Percurso. Pálido e meio bambo, carregava a sacola achatada de couro embaixo do braço.</p>
+
+         <p>Kote estava atrás do bar, folheando um livro.</p>
+         <p>-Ah, nosso convidado não intencional! Como vai a cabeça?</p>
+
+         <p>O Cronista ergueu uma das mãos para tocá-a na parte posterior.</p>
+
+         <p>- Lateja um pouco quando eu me mexo muito depresssa, mas ainda funciona.</p>
+
+         <p>- Fico feliz em saber - disse Kote.</p>
+
+         <p>- Aqui é... - hesitou o Cronista, olhando em volta. - Estamos em Nalgures?</p>
+
+         <p>Kote fez que sim.</p>
+
+        <p>- Na verdade, você está bem no meio de Nalgures. - Fez um gesto amplo e dramático com uma das mãos. - próspera metrópole. Lar de dezenas.</p>
+
+        <p>O Cronista fitou o homem ruivo atrás do bar. Encostou-se numa das mesas para encontrar apoio.</p>
+
+       <p>- Pelo corpo chamuscado de Deus! - exclamou, sem fôlego. - É você mesmo, não é?</p>
+
+       <p>O hospedeiro fez um ar intrigado.</p>
+
+       <p>- Perdão, como disse?</p>
+
+       <p>- Sei que você vai negar - disse o Cronista -, mas o que vi ontem à noite...</p>
+
+       <p>O hospedeiro ergueu a mão para silenciá-lo.</p>
+
+       <p>- Antes de discutirmos a possibilidade de você ter ficado de miolo mole com aquela rachadura na cabeça, diga-me como está a estrada para Tinuë?</p>
+
+       <p><em>Continua...</em></p>
+       </section>
+       <!-- <-- FECHA CAPÍTULO 6 -->
+
+         <!-- ========== CAPÍTULO 7 ========== -->
+        <section id="capitulo7">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 7</div>
+            <h2 class="titulo-capitulo">Sobre primórdios e o noe das coisas</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 7 ... -->
+         <p>A luz do sol derramou-se na Pousada Marco do Percurso. Era uma luz fria e nova, adequada aos começos. Roçou no moleiro que acionava sua roda d'água para a jornada de trabalho. Iluminou a forja que o ferreiro reatiçava após quatro dias malhando a frio no metal. Tocou nos cavalos de tração presos às carroças e nas lâminas das foices reluzentes, afiadas e prontas no início de um dia de outono.</p>
+
+         <p>Dentro da hospedaria a luz incidiu sobre o rosto do Cronista e tocou em algo que começava: uma página em branco à espera das primeiras palavras de uma história. A luz fluiu pelo bar, espelhando milhares de minúsculos princípios de arco-íris sobre as garrafas coloridas, e escalou a parede em direção à espada, como à procura de um último começo.</p>
+
+         <p>No entando, quando ela pousou na espada, não havia começo algum a ser visto. Na verdade, a luz refletida pela arma era opaca, polida e muito antiga. Ao comtemplá-la, o Cronista se lembrou de que, embora fosse o início de um dia, era também final de outono e já principiava a esfriar. A espada reluziu com a percepção de que a aurora era um pequeno começo, comparado ao término de uma estação: ao término de um ano.</p>
+
+         <p>O Cronista desviou os olhos da espada, ciente de que Kvothe dissera alguma coisa, mas sem saber o  quê.</p>
+
+         <p>- Desculpe-me, o que disse?</p>
+
+         <p>Como é que as pessoas costumam começar a nassar suas histórias?</p>
+
+         <p>O cronista encolheu os ombros.</p>
+
+         <p>A maioria simplesmente conta o que lembra. Depois eu registro os acontecimentos na ordem apropriada, retiro as partes desnecessárias, esclareço, simplifico, esse tipo de coisa.</p>
+
+         <p>Kvothe franziu a testa.</p>
+
+         <p>- Acho que isso nã vai funcionar.</p>
+         <p>O Cronista deu um sorriso tímido.</p>
+         <p>- Os contadores de histórias são sempre diferentes. Preferem que não mexam em suas histórias. Mas também preferem uma platéia atenta. Em geral, eu escuto e anoto depois. Tenho a memória quase perfeita.</p>
+
+         <p><em>Quase perfeita</em>não serve - disse Kvothe, encontando um dedo nos lábios.</p>
+
+         <p>- Com que velocidade você consegue escrever?</p>
+
+         <p>O Cronista deu um sorriso sagaz.</p>
+
+         <p>- Mais rápido do que um homem é capaz de falar.</p>
+
+         <p><em>Continua...</em></p>
+         </section>
+         <!-- <- FECHA CAPÍTULO 7 -->
+        
+         <!-- ========== CAPÍTULO 8 ========== -->
+        <section id="capitulo8">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 8</div>
+            <h2 class="titulo-capitulo">Ladões, hereges e postitutas</h2>
+        </header>
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 8 ... -->
+         <p>Para que esta história seja algo parecido com o livro de minhas proezas, devemos começar do princípio. Do cerne de quem realmente sou. Para isso, você precisa se lembrar de que, antes de ser qualquer outra coisa, fui um dos Edena Ruh.</p>
+
+         <p>Ao contrário da crença popular, nem todos os artistas itinerantes fazem parte dos Ruh. Minha trupe não era um pobre bando mambembe fazendo graça nas encruzilhadas em troca de ninharias, cantando para ganhar uma refeição. Éramos atores da corte, Vassalos de Lorde Greyfallow. Nossa chegada à maioria das cidadezinhas era um evento maior do que se juntássemos o Festival do Solsticio de Inverno com os Jogos das Solinadas. Em geral, havia pelo menos oito carroças em nossa trupe e bem mais de duas dúzias de artistas: atores e acrobatas, músicos e mágicos, malabaristas e bufões - minha família.</p>
+
+         <p>Meu pai era melhor ator e músico do que qualquer um que você já tenha visto. Minha mãe tinha um talento natural para as palavras. Ambos eram bonitos, de cabelos pretos e riso fácil. Eram Ruh até os ossos, e isso, a rigor, é tudo o que precisa ser dito; exceto, talvez, que mamãe tinha pertencido à nobreza antes de participar da trupe. Ela me contou que papai a seduziu a deixar "um inferno enfadonho e miserável" com melodias doces e palavras mais doces ainda. Só posso presumir que se referisse a Três Encruzilhadas, onde estivemos visitando parentes uma vez, quando eu era muito pequeno.</p>
+
+         <p>Meus pais nunca se casaram realmente, com o que pretendo dizer que nunca se deram ao trabalho de oficializar seu relacionamento em nenhuma igreja. Esse fato não me constrange. Eles se consideravam casados e não viam muito sentido em anunciar uso a qualquer governo ou a Deus. Respeito essa postura. Na verdade, eles me pareciam mais felizes e fiéis do que muitos casais oficialmente casados que conheci desde então.</p>
+
+         <p>Nosso mecenas era o barão Greyfallow, cujo nome abria muitas portas que, em circunstancias comuns, estariam fechadas para os Edena Ruh. Em troca, usávamos suas cores, o verde e o cinza, e contribuiamos para sua reputação aonde quer que fossemos. Una vez por ano passávamos duas onzenas em sua herdade, oferecendo entretenimento a ele e sua família.</p>
+
+         <p>Foi uma infância feliz, crescendo no meio de um interminável parque de diverções. Papat lia os grandes monólogos para mim nas longas viagens de carroça entre as cidades. Recitando-os quase sempre de memória, a voz dele se estendía por uns 400 metros de estrada. Lembro-me de acompanha-lo na leitura, entrando nos papéis secundários. Ele me incentivava a tentar as partes especialmente boas, e aprendi a amar a sensação das palavras corretas.</p> 
+         <p><em>Continua...</em></p>
+        </section>
+        <!-- <- FECHA CAPÍTULO 8 -->
+        
+         <!-- ========== CAPÍTULO 9 ========== -->
+        <section id="capitulo9">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 9</div>
+            <h2 class="titulo-capitulo">Andando de carroça com Ben</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 9 ... -->
+         <p>Abenthy foi o primeiro arcanista que conheci, uma figura estranha e empolgante para um rapazinho. Ele era versado em todas as ciências: botânica, astronomia, psi-cologia, anatomia, alquimia, geologia, quimica..</p>
+
+         <p>Era corpulento, de olhos cintilantes que se deslocavam depressa de uma coisa para outra. Tinha uma cabeleira cinza-escura que lhe caia pela parte posterior da cabeça, mas (e é disso que mais me lembro nele) não tinha sobrancelhas. Ou melhor, tinha, no entanto elas viviam em perpétuo estado de recomeçar a crescer, de tanto serem queimadas no curso de suas pesquisas alquimicas. Isso lhe dava uma expressão ao mesmo tempo surpresa e inquisitiva.</p>
+
+         <p>Ele falava em tom suave, ria muito e nunca exercitava sua sabedoria a custa dos outros. Praguejava feito um marinheiro bêbado de perna quebrada, mas só contra seus burros, que se chamavam Alfa e Beta. Abenthy lhes dava cenouras e torrões de açúcar quando achava que não havia ninguém olhando. A química era sua grande paixão e meu pai disse nunca ter conhecido um homem que soubesse cuidar melhor de um alambique.</p>
+
+         <p>Em seu segundo dia na trupe, eu já estava transformando em hábito andar em sua carroça. Fazia perguntas e Abenthy respondia. Depois ele me pedia canções e eu as dedilhava num alaúde que pegara emprestado na carroça de meu pai.</p>
+
+         <p>Vez por outra, chegava até a cantar. Tinha uma voz límpida e descuidada de tenor. que vivia saindo do tom procurando notas nos lugares errados. Não raro ele parava e ria de si mesmo quando isso acontecia. Era um bom homem e não carregava em si a menor presunção.</p>
+
+         <p>Não muito depois de Abenthy juntar-se a nossa trupe, perguntei-lhe como era ser arcanista.Ele me fitou, pensativo:</p>
+
+         <p>- Você já conheceu algum arcanista?</p>
+
+         <p>- Uma vez pagamos a um deles na estrada para consertar um eixo rachado - respondi. Parei para pensar e completei: - Ele estava indo para o interior, numa caravana de pescado.</p>
+
+         <p>Abenthy fez um gesto desdenhoso.</p>
+
+         <p>- Não, não, menino, Estou falando de <em>arcanistas</em>. Não de um pobre mago que atrai o frio e trabalha para lá e para cá nas rotas das caravanas tentando impedir que a carne fresca apodreça</p>
+
+         <p>- Qual a diferença? - perguntei, intuindo que ele esperava isso de mim.</p>
+           <p><em>Continua...</em></p>
+        </section>
+        <!-- <- FECHA CAPÍTULO 9 -->
+        
+         <!-- ========== CAPÍTULO 10 ========== -->
+        <section id="capitulo10">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 10</div>
+            <h2 class="titulo-capitulo">Alar e diversas pedras</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 10 ... -->
+         <p>Ben segurou um pedaço de pedra comum, ligeiramente maior que seu punho.</p>
+
+         <p>- Que acontece se eu soltar essa pedra?</p>
+
+         <p>Pensei um pouco. Durante as aulas, as perguntas simples rarissimas vezes eram simples. Por fim, dei a resposta óbvia:</p>
+
+         <p>- É provável que ela caia.</p>
+
+         <p>Ben ergueu uma sobrancelha. Fazia meses que eu o mantinha ocupado, de modo que ele não tivera a oportunidade de queimá-las acidentalmente.</p>
+
+         <p>- Provável? Você parece um sofista, menino. Por acaso ela não cai sempre?</p>
+
+         <p>Mostrei-lhe a língua:</p>
+
+         <p>- Não tente me enrolar descaradamente. Isso é uma falácia. Foi você mesmo quem me ensinou.</p>
+
+         <p>Ele riu.</p>
+
+         <p>- Ótimo. Seria lícito dizer que você acredita que ela cairá?</p>
+
+         <p>- Bastante.</p>
+
+         <p>- Quero que acredite que ela subirá quando eu soltá-la. - Seu sorriso se alargou. Tentei, era como fazer ginástica mental. Passado algum tempo, balancei a cabeça.</p>
+
+         <p>- Está bem.</p>
+
+         <p>- Até que ponto você acredita?</p>
+
+         <p>- Não muito - admiti.</p>
+
+         <p>- Quero que acredite que acredite que esta pedra sairá flutuando. Acredite com uma fé capaz de mover montanhas e sacudir árvores - instruiu. Fez uma pausa e pareceu mudar de estratégia. - Você acredita em Deus?</p>
+
+         <p>- Em Tehlu? De certo modo.</p>
+
+         <p>- Não é o bastante. Acredita em seus pais?</p>
+
+         <p>Dei um sorrisinho.</p>
+
+         <p>- Às vezes. Não posso vê-los neste exato momento.</p>
+
+         <p>Ben deu um grunhido e soltou do gancho o bastão que usava para instigar Alfa e Beta quando eles estavam com preguiça.</p>
+
+         <p>- Acredita nisso, E'lir? - perguntou. Só e chmava de E'lir quando achava que eu estava sendo de uma teimosia especialmente proposital. Segurou o bastão para que o examinasse.</p>
+
+         <p>Haavia um brilho malicioso em seu olhar. Resolvi nao desafiar a sorte.</p>
+
+         <p>- Sim.</p>
+         <p><em>Continua...</em></p>
+        </section>
+        <!-- <- FECHA CAPÍTULO 10 -->
+        
+         <!-- ========== CAPÍTULO 11 ========== -->
+        <section id="capitulo11">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 11</div>
+            <h2 class="titulo-capitulo">A conexão do ferro</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 11 ... -->
+         <p>Eu estava sentado na traseira da carroça de Abenthy. Era um lugar maravilhoso para mim, sede de uma centena de frascos e feixes, saturado por mil odores. Para minha mente juvenil, em geral era mais divertido que a carreoça de um latoeiro; mas não nesse dia.</p>
+
+         <p>Chovera forte na noite anterior e a estrada se tornara um denso lodaçal. Como a trupe nãao tiha nenhuma programação específica, decidíramos esperar um ou dois dias para que as estradas tivessem tempo de secar. Era um acontecimento bastante comum e caiu num momento perfeito para Ben aprimorar minha educação. Assim, sentei-me diante da bancada de madeira nos fundos de sua carroça, impaciente por desperdiçar o dia a ouvi-lo me ensinar coisas que eu já havia compreendido.</p>
+
+         <p>Meus pensamentos devem ter transparecido, porque Abenthy deu um suspiro e se sentou ao meu lado.</p>
+
+         <p>- Não é bem o que você esperava, hein?</p>
+
+         <p>Relaxei um pouco, sabendo que seu tom significava um adiantamento da lição. Ele recolheu um punhado de ocres de ferro que estavam na mesa e os chacoalhou na mão, pensativo.</p>
+
+         <p>Olhou pra mim e perguntou:</p>
+
+         <p>- Você aprendeu a fazer malabarismos de uma vez só? Com cinco bolas de cada vez° E com facas também?</p>
+
+         <p>Enrubesci um pouco ao me lembrar. No começo, Trip não me deixara nem mesmo tentar com três bolas. Fizera-me jogar com duas e eu até as deixara cair aalgumas vezes. Foi o que contei a Ben.</p>
+
+         <p>- Certo - disse ele. - Domine este truque e você aprenderá outro.</p>
+
+         <p>Esperei que se levantasse e recomeçasse a aula, mas não foi o que ele fez.</p>
+
+         <p>Em vez disso, exibiu o punhado de ocres de ferro e indagou:</p>
+
+         <p>- O que acha destes? - E bateu uns nos outros na mão.</p>
+
+         <p>- Em que sentido? Em termins físicos, químicos, históricos...</p>
+
+         <p>- Históricos. - Ele sorriu. - Assombre-me com a sua compreensão das minúscias históricas, E'lir.</p>
+
+         <p>Eu lhe perguntara uma vez o que significava E'lir. Ele tiha dito que significava "sábio", mas e tinha minhas dúvidas, por seu jeito de torcer a boca ao dizê-lo.</p>
+
+         <p>- Muito tempo atrás, as pessoas que... - comecei.</p>
+
+         <p>- Quanto tempo?</p>
+          <p><em>Continua...</em></p>
+        </section>
+        <!-- <- FECHA CAPÍTULO 11 -->
+        
+         <!-- ========== CAPÍTULO 12 ========== -->
+        <section id="capitulo12">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 12</div>
+            <h2 class="titulo-capitulo">Peças encaixadas no quebra-cabeça</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 12 ... -->
+         <p>Quase no fim do verão, ouvi acidentalmente uma conversa que me arrancou num tranco de meu estado de abençoada ignorância. Quando crianças, raramente pensávamos no futuro. Essa inocência nos deixa livres para para nos divertirmos como poucos adultos conseguem.  O dia em que nos inquietamos com o futuro é aquele em que deixamos a infância para trás.</p>
+
+         <p>Era noite e a trupe havia acampado à beira da estrada. Abenthy me dera uma nova para praticar: O Máximo de Calor Variável Transferido para o Movimento Constante, oou qualquer coisa pretenciosa assim.</p>
+
+         <p>Era complicado, mas se encaixara no lugar como uma peça num quebra-cabeças. Levei uns 15 minutos e, pelo tom de Abenthy, calculei que ele esperava levar três ou quatro horas, pelo menos.</p>
+
+         <p>Assim, fui procurá-lo: em parte para receber minha nova lição, em parte para poder me mostrar só um bocadinho prosa.</p>
+
+         <p>Achei-o na carroça de meus pais. Ouvi os três muito antes de vê-los. Suas vozes eram simples murmúrios, aquela música distante de conversa quando ela é baixa demais para se discernirem as palavras. Mas, ao me aproximar, ouvi nitidamente uma palavra: <em>Chandriano</em>.</p>
+
+         <p>Estaquei ao ouvi-la. Todo mundo na trupe sabia que meu pai vinha trabalhando numa canção. fazia mais de um ano que arrancava antigas histórias e poemas do povo das cidades em todos os lugares em que parávamos para nos apresentar.</p>
+
+         <p>Durante meses, tinham sido histórias sobre Lanre. Depois papai também se pusera a recolher contos de fadas e lendas sobre duendes e seres trapentos. E então havia começado a fazer perguntas sobre o Chandriano...</p>
+
+         <p>Isso meses antes. No semestre anterior ele fizera mais perguntas sobre o Chandriano e menos sobre Lanre, Lyra e o resto. Quase todas as músicas que meu pai se propunha escrever eram concluídas numa só temporada, mas essa ja se estendia pelo segundo ano.</p>
+
+         <p>Você também precisa saber que papai nunca deixava uma palavra ou sussurro de uma canção serem ouvidos antes de ela ficar pronta para ser tocada. Só miha mãe era admitida em sua confiança já que sempre havia a mão dela em qualquer canção que ele compusesse. O talento paara a melodia era dele. As melhores letras eram dela.</p>
+
+         <p>Quando se espera algumas onzenas ou meses para ouvir uma música terminada, a expectativa acrescenta sabor. Passado um ano, porém, a empolgação começa a murchar. Àquelas altura, decorrido um ano e meio, o pessoal estava quase louco de curiosiade. Às vezes isso levava a palavras ríspidas quando alguém era apanhado vagando um pouco perto demais de nossa carroça enquanto papai e mamãe trabalhavam.</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 12 -->
+        
+         <!-- ========== CAPÍTULO 13 ========== -->
+        <section id="capitulo13">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 13</div>
+            <h2 class="titulo-capitulo">Interlúdio - Carne com sange por baixo</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 13 ... -->
+         <p>Caiu o silêncio na Pousada Marco do Percurso. Circundou os dois homens sentados a uma mesa no salão, que a não ser po eles, estav a deserto. Kvothe havia parado de falar e, embora parecese fitar as mãos cruzadas, na verdade tinha o olhar distante. Quando enfim levantou os olhos, pareceu quase surpreso ao deparar com o Cronista sentado defronte dele, com a pena erguida acima do tinteiro.</p>
+
+         <p>Kvothe soltou a respiração, constrangido, e fez sinal para que o Cronista depusesse sua pena. Passado um momento, o homem obedeceu, limpando a ponta num pano limpo, antes de deitá-la sobre a mesa.</p>
+
+         <p>- Eu gostaria de uma bebida - anuncio Kvothe subitamente. - Não tenho contado muitas histórias nos últimos tempos e percebi que estou com uma sede absurda.</p>
+
+         <p>Levantou-se serenamente e começou a transitar pelo labirinto de mesas vazias em direção ao bar deserto.</p>
+
+         <p>- Posso lhe oferecer quase tudo: cerveja preta vinho branco, sidra aromatizada, chocolate, café...</p>
+
+         <p>O Cronista erueu uma sobrancelha.</p>
+
+         <p>- Chocolate seria maravilhoso, se você tiver. Eu não esperaria encontrar esse tipo de coisa tão longe de... - Interrompeu-se e pigarreou polidamente.  - Bem, de qualquer lugar.</p>
+
+         <p>- Temos de tudo aqui na Pousada - disse Kvothe, com um gesto displiscente para o salão vazio. - Exceto fregueses, é claro - acresentou. Pegou uma botija de barro embaixo do bar e a pôs no balcão, fazendo um som oco. Deu um suspiro antes de chamar: Bast! Traga um pouco de sidra, sim?</p>
+
+         <p>Uma resposta indistinta ecoou por uma porta nos fundos do salão.</p>
+
+         <p>- Bast... - reclamou Kvothe, aparentemente baixo demais para ser ouvido.</p>
+
+         <p>- Venha você mesmo aqui buscá-la aqui embaixo, seu escritor de meia-tigela! - gritou a voz do porão. - Estou no meio de uma coisa.</p>
+
+         <p>- Ajudante contratado? - perguntou o Cronista.</p>
+
+         <p>Kvothe apoiou os cotovelos no bar e deu um sorriso indulgente.</p>
+
+         <p>Passado um momento, o som de alguém subindo um lance de escada de madeira com bota de sola grossa ecoou no vão da porta. Bast entrou no salão resmungando entre dentes.</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 13 -->
+        
+         <!-- ========== CAPÍTULO 14 ========== -->
+        <section id="capitulo14">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 14</div>
+            <h2 class="titulo-capitulo">O nome do vento</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 14 ... -->
+         <p>O inverno é uma estação fraca para uma trupe itinerante, porém Abenthy fez bom uso dele e finalmente começou a me ensinar as simpatias com afinco. Mas, como tantas vezes acontece - especialmente com as crianças -, a expectativa se revelou muito mais importante que a realidade.</p>
+
+         <p>Seria um erro dizer que me decepcionei com a simpatia. Sinceramente, no entanto <em>fiquei</em>desapontado. Não era como eu esperava que fosse a magia. Era útil. Isso não se podia negar. Ben a usava para fazer a iluminação de nossos epetáculos. A simpatia podia acender fogo sem pederneiras ou levantar grandes pesos sem incômodas cordas e polias.</p>
+
+         <p>Só que, na primeira vez que eu o vira, Ben tinha conseguido, de alguma forma, chamar o vento. Aquilo não fora mera simpatia. Era magia de livros de histórias. Era o segredo que eu queria mais que tudo.</p>
+
+         <p>Já deixáramos o degelo da primavera bem para trás e a trupe seguia pelas florestas e campos da parte ocidental da República. Eu seguia junto de Ben, como de hábito, na dianteira da carroça. O verão estava decidindo dar novamente o ar de sua graça e tudo verdejava e crescia.</p>
+
+         <p>Fazia cerca de uma hora que as coisas andavam calmas. Ben cochilava, com as rédeas frouxas numa das mãos, quando a carroça bateu numa pedra e nos arrancou num solavanco de nossos respectivos devaneios.</p>
+
+         <p>Ele se empertigou no assento e se dirigiu a mim num tom que eu passaria a interpretar como "ora se tenho um quebra-cabeça para você!".</p>
+
+         <p>- Como você faria uma tijela de água ferver?</p>
+
+         <p>Com uma olhada ao redor, vi um pedregulho à beira da estrada. Apontei para ele.</p>
+
+         <p>- Aquela pedra deve estar quente, imóvel sob o sol. Eu faria uma ligação com a água da chaleira e usaria o calor da pedra para fazer a água ferver.</p>
+
+         <p>- Pedra com água não é uma conexão muito eficiente - repreendeu-me Ben. - Apenas uma em cada 15 partes acabaria aquecendo a água.</p>
+
+         <p>- Funcionaria.</p>
+
+         <p>- Admito que sim, mas é um trabalho malfeito. Você pode fazer melhor do que isso, E'lir.</p>
+
+         <p>Em seguinda pôs-se a gritar com Alfa e com Beta, sinal de que estava realmente de bom humor. Eles acolheram os gritos com a calma de sempre, apesar de serem acusados de coisas que nenhum burro jamais faria de propósito, especialmente Beta, que possuía um caráter moral impecável.</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 14 -->
+        
+         <!-- ========== CAPÍTULO 15 ========== -->
+        <section id="capitulo15">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 15</div>
+            <h2 class="titulo-capitulo">Distrações e despedidas</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 15 ... -->
+         <p>A cidade se chamava Hallowfell. Paramos lá por alguns dias por que havia no local um bom fabricante de carroças e quase todos os nossos veículos precisavam de algum tipo de cuidado ou conserto. Enquanto aguardávamos, Ben recebeu uma proposta que não dá pôde recusar.</p>
+
+         <p>Tratava-sse de uma viúva razoavelmente rica, razoavelmente jovem e, para meus olhos inexperientes, razoavelmente atraente. A história oficial era que ela precisava de alguém para servir de tutor do filho pequeno. Mas quem visse os dois caminhando juntos perceberia a verdade por trás dessa história.</p>
+
+         <p>Ela fora casada com o cervejeiro, que tinha morrio afogado dois anos antes. Vinha tentando dirigir a cervejaria da melhor maneira possível, mas a rigor não tinha conhecimento nem experiência para fazer um bom trabalho...</p>
+
+         <p>Como você vê, acho que ninguém conseguiria construir uma armadilha melhor para Ben, nem se tentasse.</p>
+
+         <p>Os planos foram modificados e atrupe permaneceu por mai alguns dias em Hallowfell. Antecipou-se a data do meu aniversário para combiná-la com a festa de despedida de Ben.</p>
+
+         <p>Para ter uma ideia clara do que foi isso, você precia entender que nada é tão grandioso quanto os integrantes de uma trupe ao se exibirem uns para os outros. Os bons artistas procuram tornar especial cada apresentação, mas convém lembrar que o espetáculo que eles montam para você é o mesmo que já montaram para centenas de outras platéias. Até as trupes mais dedicadas têm lá suas apresentações desenxabidas vez por outra, especialmente quando sabem que podem sair impunes.</p>
+
+         <p>As cidadezinhas, as hospedarias rurais, esses lugares não sabim a diferença entre um bom e um mau espetáculo. Mas os colegas do meio artístico sabiam.</p>
+
+         <p>Então pense só: como entreter pessoas que já o viram representar mil vezes? Você sacode a poeira dos velhos truques. Experimenta alguns novos. Torce pelo melhor. E, é claro, os grandes fracassos divertem tanto quanto os grandes sucessos.</p>
+
+         <p>Lembro-me dessa noite como um maravilhoso borrão de emoções calorosas, com toques de tristeza. Violinos, alaúdes e tambores, todos tocaram seus instrumentos, dançaram e cantaram o quanto quiseram. Eu diria que rivalizamos com qualquer festejo do reino encantado de que você possa sse lembrar.</p>
+
+         <p>Ganhei presentes. Trip me deu uma faca com cabo de couro para usar na cinta, alganddo que todo menino deveria ter algo que pudessem machucar-se, Shandi me deu uma capa encantadora, feita por el, cheia de bolsinhos espalhados para guardar os tesouris de um menino. Meus pais me deram umm alaúde, uma peça linda de madera escura e lisa. Tive de tocar uma música, é claro, e Ben cantou comigo. Meus dedos escorregaram um pouco nas cordas do instrumento pouco conhecido e Ben desafinou uma ou duas vezes procurando as notas, mas foi bonito.</p>
+
+        
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 15 -->
+        
+         <!-- ========== CAPÍTULO 16 ========== -->
+        <section id="capitulo16">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 16</div>
+            <h2 class="titulo-capitulo">Esperança</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 16 ... -->
+
+        <p>Nos meses seguintes, meus pais fizeram o possível para preencher o vazio deixado pela ausência de Ben, trazendo outros artistas da trupe para ocupar meu tempo de forma produtiva e impedir que eu ficasse triste.</p>
+
+        <p>Sabe, na trupe a idade pouco tinha haver com o que quer que fosse. Se suas mãos fossem rápidas o bastante, fazia malabarismos. Se tivesse o rosto bem escanhodo e coubesse no vestido, fazia o papel de Lady Reythiiel em <em>O porqueiro e o rouxinol</em>. Em geral, era tudo simples assim.</p>
+
+        <p>Por isso Trip me ensinou a fazer piadas e das cambalhotas. Shadi me conduziu pelas danças das cortes de meia dúzia de países. Teren mediu minha altura pelo punho de sua espada e julgou que eu havia crescido o bastante para me iniciar nos fundamentos da esgrima. Não o bastante para lutar propriamente, frisou, mas o suficiente para fazer uma boa exibição no palco.</p>
+
+        <p>As estradas ficavam boas nessa época do ano, de modo que fizemos o trajeto para o norte na República num tempo excelente: 25 a 30 quilômetros por dia, procurando novos vilarejos em que nos apresentarmos. Com a partida de Ben, eu viajava com o meu pai com mais frequência e ele iniciou minha preparação formal para o palco.</p>
+
+        <p>Eu já sabia muita coisa, é claro. Mas o que tinha aprendido fora uma misturada sem disciplina. Papai tratou de me mostrar sistematicamente a verdadeira mecânica do ofício de ator: como ligeiras mudanças de inflexão ou postura faziam um homem parecer atrapalhado, astucioso ou tolo.</p>
+
+        <p>Por último, mamãe começou a me ensinar a me comportar na companhia de pessoas refinadas.Eu sabia algumas coisas, por nossas temporadas infrequentes com o Barão Greyfallow, e me julgava suficientemente polido sem ter que decorar formas de tratamento, detalhes de etiqueta à mesa e a hierarquia complicada e confusa da nobreza. E foi exatamente o que acabei dizendo à mamãe.</p>
+
+        <p>- Quem se importa se um Visconde mondegano é superior a um spara-than víntico? - protestei. - E quem se importa se um deles é "vossa graça" e o outro é "milorde"?</p>
+
+        <p>- Eles se importam - respondeu minha mãe em tom firme. - Se vai se apresentar para elees, você precisa conduzir-se com dignidade e aprender a manter o cotovelo fora da sopa.</p>
+
+        <p>- Papai não se importa com que garfo usar e nem com quem é superior a quê - reclamei.</p>
+
+        <p>Mamãe carregou o sobrolho e espremeu os olhos.</p>
+
+        <p>- Quem é superior a <em>quem</em>- corrigi-me, de má vontade.</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 16 -->
+        
+         <!-- ========== CAPÍTULO 17 ========== -->
+        <section id="capitulo17">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 17</div>
+            <h2 class="titulo-capitulo">Interlúdio - Outono</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 17 ... -->
+
+        <p>Kvothe estendeu a mão para o Cronista, depois virou-se para seu discípulo, franzindo o cenho.</p>
+
+        <p>- Pare de me olhar deste jeito, Bast.</p>
+
+        <p>Ele parecia à beira das lágrimas.</p>
+
+        <p>- Ah, Reshi - disse, com a voz embargada -, eu não fazia ideia.</p>
+        <p>Kvothe fez um gesto de quem cortasse o ar com a lateral da mão.</p>
+
+        <p>- Não havia razão para que fizesse,  Bast, e não há razão para fazer um escarcéu por causa disso.</p>
+
+        <p>- Mas Reshi...</p>
+
+        <p>Kvothe lhe lançou um olhar ssevero.</p>
+
+        <p>- O que é, Bast? Devo chorar e arrancar os cabelos? Maldizer Tehlu e seus anjos? Dar murros no peito? Não, isso seria um drama barato.</p>
+
+        <p>Sua voz se abrandou um pouco e ele acrescentou:</p>
+
+        <p>- Agradeço seu interesse, mas isto é apenas um pedaço da história, nem sequer o pior, e <em>não</em> o estou contando para despertar piedade.</p>
+
+        <p>Em seguida afastou a cadeira da mesa e se levantou.</p>
+
+        <p>- Ademais, tudo isso aconteceu há muito tempo  - disse, com um gesto desdenhoso. - O tempo é um grande remédio, e por aí vai.</p>
+
+        <p>Esfregou as mãos e completou:</p>
+
+        <p>- Agora vou buscar lenha suficiente para atravessarmos a noite. Vai esfriar, se é que sou um bom juiz do tempo. Vocês podem preprar uns dois pães para assar enquanto vou lá fora, e tratem de se recompor. Eu me recuso a contar o resto desta história se ficarem me olhando com esses olhos choramingões.</p>
+
+        <p>Com isso, Kvothe foi para trás do bar e cruzou a porta da cozinha, em direção à saída dos fundos da hospedaria.</p>
+
+        <p>Bast esfregou os olhos com gestos rudes, depois observou seu mestre afastar-se.</p>
+
+        <p>- Ele fica bem, desde que se mantenha ocupado - disse baixinho.</p>
+
+        <p>- Perdão, como disse? - Perguntou o Cronista, com ar pensativo. Remexeu-se na cadeira, sem jeito, como quem quisesse levantar-se mas não conseguisse descobrir uma forma educada de pedir licença.</p>
+
+        <p>Bast lhe deu um sorriso caloroso com os olhos novamente de um azul humano.</p>
+
+        <p>- Fiquei muito empolgado em saber quem você era, saber que ele ia contar sua história. Ele anda muito abatido ultimamente e não há nada que consiga arrancá-lo disso, nada a fazer senão ficar sentado, remoendo as ideias. Tenho certeza de que a recordação dos bons tempos fará... - Fez uma careta e se nterrompeu. - Não estou me expressando muito bem. Desculpe-me por agora há pouco. Eu não estava raciocinando direito.</p>
+
+        <p><em>Continua...</em></p>
+        </section>
+
+         <!-- <- FECHA CAPÍTULO 17 -->
+        
+         <!-- ========== CAPÍTULO 18 ========== -->
+        <section id="capitulo18">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 18</div>
+            <h2 class="titulo-capitulo">Estradas para locais seguros</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 18 ... -->
+
+        <p>A maior faculdade que nossa mente possui é, talvez, a capacidade de lidar com a dor. O pensamento clássico nos ensina sobre as quatro portas da mente, e cada um cruza de acordo com sua necessidade.</p>
+
+        <p>Primeiro, existe a porta do sono. O sono nos oferece uma retirada do mundo e de todo o sofrimento que há nele. Marca a passagem do tempo, dando-nos um distanciamento das coisas que nos magoaram. Quando uma pessoa é ferida, é comum ficar inconscientte. Do mesmo modo, quem ouve uma notícia dramática comumente tem uma vertigem ou desfalece. É a maneira da mente se proteger da dor, cruzando a primeira porta.</p>
+
+        <p>Segundo, existe a porta do esquecimento. Algumas feridas são profundas demais para cicatrizar, ou profundas demais para cicatrizar depressa. Além disso, muitas lembranças são simplesmente dolorosas e não há cura alguma a realizar. O provérbio "O tempo cura todas as feridas" é falso. O tempo cura a maioria das feridas. As demais ficam escondidas atrás dessa porta.</p>
+
+        <p>Terceiro, existe a porta da loucura. Há momentos em que a mente recebe um golpe tão violento que se esconde atrás da insanindade. Ainda que isso não pareça benéfico, é. Há ocasiões em que a realidade não é nada além do penar, e, para fugir desse penar, a mente precisa deixá-la para trás.</p>
+
+        <p>Por último, existe a porta da morte. O último recurso. Nada pode ferir-nos depois de morrermos, ou assim nos disseram.</p>
+
+        <p>Depois que minha família foi assassinada, embrenhei-me a esmo na floresta e dormi. Meu corpo exigia e minha mente usou a primeira porta pra embotar a dor. A ferida foi coberta até que a hora certa pra tratá-la pudese chegar. Num movimento de autodefesa, boa parte do meu cérebro simplesmente parou de funcionar - foi dormir se você quiser.</p>
+
+        <p>Enquanto ele dormia, muitas experiências dolorosas do dia anterior foram empurradas pela segunda porta. Não completamente. Não me esqueci do que havia acontecido, mas a lembrança embotou-ses, como que vista através de uma gaze espessa. Se quissesse, eu poderia trazer à lembrança os rostos dos morto, as recordações do homem de olhos negros. Mas eu não queria me lebrar. Afastei esses pensamentos e os deixei acumular poeira num canto raramente usado da minha cabeça.</p>
+
+        <p>Sonhei, não com sangue, olhos vidrados e cheiro de cabelo queimado, mas com coisas mais suave. E, aos poucos, a ferida foi ficando dormente...</p>
+
+        <p><em>Continua...</em></p>
+        </section>
+
+         <!-- <- FECHA CAPÍTULO 18 -->
+        
+         <!-- ========== CAPÍTULO 19 ========== -->
+        <section id="capitulo19">
+        <header class="cabecalho-capitulo">
+            <div class="numero-capitulo">Capítulo 19</div>
+            <h2 class="titulo-capitulo">Dedos e cordas</h2>
+        </header>
+
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 19 ... -->
+
+        <p>No começo, eu era quase um autômato, executando, sem pensar, os atos que me mantivessem vivo.</p>
+
+        <p>Comi o segundo coelho que cacei, e o terceiro. Decobri um pedacinho de terra coberto por morangos silvestres. Escavei o chão à procura de raízes. No fim do quarto dia eu tinha tuo o que era preciso para sobreviver: um braseiro escavado no chão e cercado de peras, um abrigo para meu alaúde. Havia até reunido um pequeno estoque de alimentos a que podia recorrer em caso de emergência.</p>
+
+        <p>Dispunha também de uma coisa de que não precisava: tempo. Depois de cuidar das necessidades imediatas, descobri que não tinha nada para fazer. Acho que foi nesse momento que uma pequena parte da minha mente começou aos poucos a despertar.</p>
+
+        <p>Sem sombra de dúvida, eu não era eu mesmo. Pelo menos, não era a mesma pessoa que fora uma onzena antes. Dedicava-me a tudo o que fazia usando a totalidade da mente, sem deixar nenhum espaço livre em mim para recordar.</p>
+
+        <p>Fiquei mais magro e mais maltrapilho. Dormia sob a chuva ou o sol, na relva macia, na terra úmida ou em pedras duras, com uma intensidade de indiferença que só o luto é capaz de promover. A única diferença que eu notava no ambiente era quando chovia,  porque então não podia pegar meu alaúde para tocar, e isso me era doloroso.</p>
+
+        <p>É claro que eu tocava. Era meu único consolo.</p>
+
+        <p>No fim do primeiro mês, meus dedos tinham calos duros feito pera e eu era capaz de tocar por horas e mais horas. Tocava e tornava a executar todas as músicas que sabia de cor. Depois dedlhava também outras de que me lembrava parcialmente, preenchendo da melhor maneira possível os pedaços esquecidos.</p>
+
+        <p>Acabei podendo tocar desde a hora em que acordava até a hora em que ia dormir. Parei de executar as melodias conhecidas e comecei a inventar outras. Já inventara canções antes; tinha até ajudado meu pai a compor um ou dois versos musicais. Agora, porém, dedicava a isso toda a minha atenção. Algumas daquelas canções eu guaro comigo até hoje.</p>
+
+        <p>Logo depois  que comecei a tocar... cmo posso descrevê-lo?</p>
+
+        <p>Coeceia  dedilhar algo diferente de canções. Quando o sol aquece a relva e a brisa nos refresca, isso traz uma certa ensação. eu tocava até encontrar a sensação certa. Tocaav até a música soar como Relva Morna e Brisa Fresca.</p>
+
+        <p>Tocava só pra mim, mas eu era uma paltéia exigente. Lembro-me de ter passado quase três dias inteiros tentenado captar Vento Girando uma Folha.</p>
+
+        <p>No fim do segundo mês, conseguia tocar as coiosas quase com a facilidade comque as via e sentia: <em>Sol poente por trás das nuvens, Pássaro bebendo água, Orvalho nas samambaias</em>.</p>
+        <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 19 -->    
+
+            <!-- ========== CAPÍTULO 20 ========== -->  
+
+        <section id="capitulo20">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 20</div>
+            <h2 class="titulo-capitulo">De mãos ensanguentadas a punhos de dor lancinante</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 20 ... -->
+         <p>Era mais ou menos meio-dia quando a carroça dobrou numa outra estrada, larga como um rio e pavimentada de pedra. No começo havia apenas um punhado de viajantes e uma ou duas carroças, mas para mim pareceu uma grande multidão, depois de tanto tempo sozinho.</p>
+
+         <p>Seguimos cidade adentro e as construções baixas deram lugar a armazéns mais altos e a hospedarias. Árvores e jardins foram substituídos por ruelas e vendedores ambulantes. A estrada que parecia um grande rio ficou entupida e sufocada pela barafunda de uma centena de carrinhos e pedestres, dezenas de carretas e carroças de vários tamanhos e um ou outro homem à cavalo.</p>
+
+         <p>Havia sons de cascos e gente gritando, e cheiro de cerveja, suor, lixo e alcatrão. Perguntei a mim mesmo que cidade era aquela e se eu estivera ali antes, antes...</p>
+
+         <p>Trinquei os dentes e me obriguei a pensar em outras coisas.</p>
+
+         <p>- Tamo quase chegando - disse Seth, elevado a voz acia do burburinho. A estrada acabou dando num mercado. As carroças rolavam sobre as pedras do calçamento com um barulho que lembrava um trovão distante. Voze pechiinchavam e discutiam. Em algum lugar ao longe uma criança chorava alto, com voz estrídula. Rodamos a esmo por algum tempo, até encontrar uma esquina desocupada em frente a uma livraria.</p>
+
+         <p>Seth parou a carroça e pulei para o chão enquanto eles esticavam o corpo para tirar a dormência da estrada. Depois, numa espécie de acordo mudo, ajudei-os a descarregar as sacas caroçudas da traseira e empilhá-las ao lado da carroça.</p>
+
+         <p>Meia hora depois, descansávamos em meio ao monte delas. Seth me olhou, fazendo sombra nos olhos com uma das mãos.</p>
+
+         <p>- O que ocê veio fazer na cidade hoje, menino?</p>
+
+         <p>- Preciso de cordas de alaúde - respondi. Só então me dei conta de que não sabia onde estava o alaúde de meu pai. Olhei em volta, aflito. Não estava onde eu o deixara na carroça, nem encostado na parede, nem nas pilhas de abóboras. Senti um aperto no peito, até que o avistei ebaixo de uns sacos de aniagem soltos. Fui buscá-lo com mãos trêmulas.</p>
+            <p><em>Continua...</em></p> 
+        </section>
+
+              <!-- <- FECHA CAPÍTULO 20 -->
+                 <!-- ========== CAPÍTULO 21 ========== -->  
+
+        <section id="capitulo21">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 21</div>
+            <h2 class="titulo-capitulo">Porão, pão e pipa</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 21 ... -->
+          <p>Foi logo depois da hora do almoço. Ou melhor, teria sido depois do almoço, se eu houvesse comidoalguma coisa. Eu estava mendingando no Círculo dos Mercadores e, até aquele momento, o dia me rendera dois pntapés (de um guarda e um mercenário), três safanões (de dois carroceiros e um marinheiro), um novo xingamento concernente a ua improvável configuração anatômica (também do marinheiro), e uma cusparada de um ssenhor muito pouco carinhoso, de ocupação indefininda. E um gusa de ferro, o qual eu mais atribuía às leis da propabildade do que a qualquer bondade humana. Até um porco cego acha uma bolota de vez em quando.</p>
+
+          <p>Fazia quase um mês que eu estava morando em Tarbean e, na véspera, havia arriscado a sorte no furto pela primeira vez. Fora uma estréia pouco auspiciosa. Tinham me apanhado com a mão no bolso de um açougueiro. Isso me rendera um sopapo tão violento na lateral da cabeça que, no dia seguinte, eu me sentia zonzo toda vez que tentava me levantar ou andar depressa. Pouco encorajado por minha primeira incursão como gatuno, eu tinha decidido que esse era um dia para mendigar. Como tal, estava na média.</p>
+
+          <p>Meu estômago se contría de fome, e um pão dormido no valor de um simplesgusa não ajudaria muito. Eu estava considerando a mudança para outra rua quando vi um garoto correr até um mendigo mais jovem, do outro lado. Eles trocaram algumas palavras animadas por um momento e saíram às pressas.</p>
+
+          <p>Segui-os, é claro, demonstrando uma pálida sombra da minha antiga curiosidade insaciável. Além disso, qualquer qualquer coisa que os tirasse de uma esquina movimentada no meio do dia estava fadada a valer a pena para mim. Talvez os tehlinianos estivessem distribuindo pão outra vez, uma carroça de fruts houvesse virado ou o guada estivesse enforcando alguém. Isso valeria meia hora do meu tempo.</p>
+
+          <p>Segui os garotos pelas ruas sinuosa até vê-los dobrar uma esquia e descer correndo uma escada para o porão de um prédio decrépito. Parei, com meu tênue lampejo de curiosidade sufocado por meu bom senso.</p>
+
+          <p>Um minuto depois eles reapareceram, cada um segurando um pedaço de pão preto achatado. Observei-os passarem, rindo e trocando empurrões. O mais novinho, que não passava de seis anos, me viu olhando e acenou.</p>
+
+          <p>- Inda sobrou um pouco - gritou, com a boca cheia de pão. - Mas é melhor correr.</p>
+
+          <p>Meu bom senso seu uma rápida reviravolta e desci a escada, cauteloso. Em sua base havia umas tábuas apodrecidas, tudo o que restara de uma porta quebrada. Do lado de detro, vi um corredor curto que dava numa sala mal iluminada. Um garotinha de expressão dura passou por mim sem levantar os olhos. Agarrava outro pedaço de pão.</p>
+          <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 21 -->
+              <!-- ========== CAPÍTULO 22 ========== -->  
+
+        <section id="capitulo22">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 22</div>
+            <h2 class="titulo-capitulo">Um tempo para demônios</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 22 ... -->
+
+        <p>Aprendi muitas coisas naqueles primeiros meses em Tarbean.</p>
+
+        <p>Aprendi quais eram as estalagens e restaurantes que jogavam a melhor comida e quão estragada a comida tinha que estar para fazer mal, se a gente a comesse.</p>
+
+        <p>Aprendi que o complexo de construções muradas perto do cais era o Templo de Tehlu. Às vezes os tehlinianos distribuíam pão, fazendo-nos rezar antes de receber nossa parte. Eu não me incomodava. Era mais fácil do que mendigar. De vez eem quando os sacerdotes de manto cinza tntavam me fazer entrar na igreja para entoar as orações, mas eu tinha ouvido uns boatos e fugia sempre que me convidavam, tendo ou não recebido meu pão.</p>
+
+        <p>Aprendi a me esconder. Eu tinha um lugar secreto no alto de um velho curtume, onde três telhados se encontravam, criando um abrigo contra o vento e a chuva. O livro de Ben eu escondi embaixo dos caibros, embrulhado em lona. Só o manuseava raramente, como uma relíquia sagrada. Era o último pedaço concreto do meu passado e eu toava todas as precauções para mantê-lo seguro.</p>
+
+        <p>Aprendi que Tarbean era vasta. Você não pode entender sem tê-la visto pessoalmente. É como o oceano. Posso lhe falar da ondas e da água, mas você nem começa a ter idéia do seu tamanho enquanto não ficar parado na praia. Só se compreende realmente o oceano quando se está no meio dele, sem nada além de mar por todos os lados, estendendo-se até o infinito. Só então a pessoa se apercebe de como é pequena e impotente.</p>
+
+        <p>Parte da vastidão de Tarbean estava no fato de ela se dividir em mil pedacinhos, cada qual com sua personalidade. Havia a Chapada, o Largo dos Tropeiros, Lavadouro, Mediavila, Candeias, Tanoaria, Docas, alcatroeiros, a Alameda dos Modistas... Podia-se passar a vida inteira em Tarbean sem jamais conhecer todas as suas partes.</p>
+
+        <p>Mas, para a amaioria dos efeitos de ordem prática, Trabean tinha duas partes: a Beira-Mar e a Serrania. A Beira-Mar era onde as pessoas eram pobres. Isso fazia delas mendigos, ladrões e protistutas. A Serrania era onde as pessoas eram ricas. Isso fazia delas magistrados, políticos e cortesãs.</p>
+
+        <p>Fazia dois meses que eu estava em Tarbean quando pensei pela primeira vez em arriscar a sorte mendingando na Serrania. O inverno tinha agarrado firmementea cidade e o fesstival do Solstício de Invern vinha tornando as ruas mais perigosas que de hábito.</p>
+
+        <p>Isso eraa chocante para mim. Em todos os invernos, durante a minha meninice inteira, a nossa trupe havia organizado o Festival do Sostício de Inverno em alguma cidade. Usando máscaras de demônios, nós aterrorizávamos durante os sete dias do Luto Fechado, para grande deleite de todos. Papai enceava Encanis de um modo tão convincente que era como se o  tivéssemos invocado. E, o que era mais importante, sabia ser assustador e cuiadoso ao mesmo tempo. Ninguém jamais se machucou quando nossa trupe dirigia o espetáculo.</p>
+
+        <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 22 -->
+             <!-- ========== CAPÍTULO 23 ========== -->  
+
+        <section id="capitulo23">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 23</div>
+            <h2 class="titulo-capitulo">A roda ardente</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 23 ... -->
+         <p>Fiquei enconlhido em meu esconderijo aquela noite inteira inteira e acordei tarde no dia seguinte, constatando qu meu corpo se enenrijecera num nó apertado de dor. Como tinha comida e um pouco de vinho, permaneci onde estava, para não me arriscar a cair na tentativa de descer para a rua.</p>
+
+         <p>Era um dia em sol, com um vento úmido que não parecia parar. A chuva gelada batia em rajadas na proteção do telhado qeu se projetava sobre os outro. A chaminé estava quente atrás de mim, mas não ralmente o bastante para ssecar meu cobertor ou afastar a umidade enregelante que me empapava a roupa.</p>
+
+         <p>Terminei cedo o vinho e o pão e depois disso passei a maior parte do tempo reando os ossos do peito de peru tentando aquecer um puhado de neve na garrafa vazia de vinho, para pode bebê-la. Nenhuma das duas coisas se revelou muito produtiva, e acabei comendo punhados de neve meio derretida, que me deixaram tiritando de frio e com um gosto de alcatrão na boca.</p>
+
+         <p>Apesar dos feerimentos, peguei no sono à tarde e acordei no meio da noite, com a mais esplênida sensação de calor. Afastei o covertor e rolei para longe da chaminé, agora quente demais; tornei a acordar perto do amanhecer, tirintando de  e encharcado até os ossos. Sentia-me estranho, zonzo e confuso. Tornei a me aninhar junto à chaminé e passei o resto do dia entrando e saindo de um sono irrequieto e febril.</p>
+
+         <p>Não tenho lembrança de como desci do telhado, delirante de febre e semi-inválido. Não me lembro de ter percorrido os mais de mil metros que cruzavam Ccandeias e Canastras. Só me lembro de ter despencado na escada qe descia para o porão de Trapis agarrado à minha bolsinha de dinheiro. Caído ali, trêmulo e suando, ouvi o vago chapinhar de seus pés descalços na pedra.</p>
+
+         <p>- Que foi, que foi... - fez ele em tom gentil, enquanto me levantava. - Quietinho, quietinho.</p>
+
+         <p>Trapiss cuido de mim durante os longos dias de febre. Embrulhou-me em cobertores, limentou-me e, quando minha febre não deu sinal de baixar sozinha, uspu parte do dinheiro que eu tinha levado para compraar um remédio agridoce. Manteve meu rosto e minhas mãos úmmidos e frescos, enquanto murmurava seu doce e paciente "Quefoi, que foi... Quietinho, quietinho" e eu chorava por causa dos intermináveis sonhos febris com meus pais mortos, o Chandriano e um homem de olhos vazio.</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 23 -->    
+             <!-- ========== CAPÍTULO 24 ========== -->  
+
+        <section id="capitulo24">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 24</div>
+            <h2 class="titulo-capitulo">As próprias sombras</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 24 ... -->
+         <p>Durante todo o tempo que passei em Tarbean, continueei a aprender, mas a maioria das lições foi dolorosa e desagradável.</p>
+
+        <p>Aprendi a mendigar. Foi uma aplicação muito prática da arte cênica, com uma platéia muito difícil. Eu me saí bem, mas o dinheiro na Beira-Mar era curto, e a vasilha de pedinte vazia significava uma noite de frio e fome.</p>
+
+        <p>Aprendi a fugir de qualquer um que tivesse o sorriso anormalmente branco. A resina de dênera branqueia os dentes pouco a pouco, de modo que, quando um papa-doces vive o bastante para seus dentes ficarem completamente brancos, o provável é que já tenha vendido qualquer coisa de valor que possuísse. Tarbean era repleta de gente perigosa, mas ninguém é mais perigoso que um papa-doces tomado pelo desejo desesperador de consumir mais resina. Eles são capazes de matar por um par de vinténs.</p>
+
+        <p>Aprendi a atar trapos, criando sapatos improvisados. Os sapatos de verdade se tornaram coisa de sonho Tarbean, um grito de socorro atrai predadores, como o cheiro de sangue carregado pelo vento.</p>
+
+        <p>Eu estava dormindo no alto do prédio, bem encolhido em meu esconderijo onde três telhados se encontravam. Acordei de um sono profundo ao som de risadas altas e passos pesados na ruela lá embaixo.</p>
+
+        <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 24 -->
+             <!-- ========== CAPÍTULO 25 ========== -->  
+
+        <section id="capitulo25">
+        <header class="cabecalho-capitulo"> 
+            <div class="numero-capitulo">Capítulo 25</div>
+            <h2 class="titulo-capitulo">Interlúdio - Ansiando por uma razão</h2>
+        </header>   
+        <!-- ... TODOS OS PARÁGRAFOS DO CAPÍTULO 25 ... -->
+         <p>Kvothe fez um gesto para que o Cronista descansasse a pena e se espreguiçou, entrelaçando os dedos em cima da cabeça.</p>
+
+         <p>- FAz muito tempo que eu não me lembrava disso - comentou. - Se você está ansioso para desccobrir a razão de  eu ter-me tornado o Kvothe sobre quem contam histórias, acho que talvez possa procurá-la por aí.</p>
+
+         <p>O cenho do Cronista se franziu.</p>
+
+         <p>- O que você quer dizer, exatamente?</p>
+
+         <p>Kvothe fez uma longa pausa, olhando para as mãos.</p>
+
+         <p>- Você sabe quantas vezes fui espancado no decorrer da minha vida?</p>
+
+         <p>O cronista abanou a cabeça. Erguendo os olhos, Kvothe sorriu e encolheu os ombros com ar displiscente.</p>
+
+         <p>- Nem eu. Seria de se supor que esse tipop de coisa ficasse gravado na memória da pessoa. Seria de  se supor que eu recordasse de quantos de meus ossos foram quebrados. Seria de se supor que eu recordase os pontos e os curativos - completou. Abanou a cabeça. - Nada disso. o que eu me lembro é daquele garotinho soluçando no escuro. Claro como um sino, depois de todos esses anos.</p>
+
+         <p>O cronista carregou o olho.</p>
+
+         <p>- Você mesmo disse que não havia nada que pudesse fazer.</p>
+
+         <p>- Podia - disse Kvothe, com ar sério -, mas não fiz. Fiz uma escolha e me arrependo dela até hoje. Os ossos se consolidam. O arrependimento fica com a gente para sempre.</p>
+
+         <p>Kvothe se afastou da mesa.</p>
+
+         <p>- Já basta isso sobre o lado mais negro de Tarbean, imagino. - Ficou de pé, dando uma grande espreguiçada, com os braços levantados.</p>
+
+         <p>- Por que, Renshi? - brotram as palavras de Bast,  num jorro súbito. - Por que ficou lá, se era tão terrível?</p>
+
+         <p>Kvothe meneou a cabeça, ensimesmado, como se estivesse esperando essa pergunta.</p>
+
+         <p>- Para onde mais eu iria, Bast? Todas as pessoas qeu eu conhecia estavam mortas.</p>
+
+         <p>- Nem todas - insistiu Bast. - Havia o abenthy. Você poderia tê-lo procurado.</p>
+
+         <p>- Hallowfell ficava a centenas de quilômetros de distância, Bast - retrucou Kvothe, com ar cansado, caminhando devagar para o outro lado do salão e passando para trás do bar. - Centenas de quilômetros sem os mapas do meu pai ára me orientar. Centenas de quilômetros ssem carroças para viajar ou dormir. Sem nenhum tipo de ajuda, nem dinheiro, nem sapaptos. Não sesra uma jornada impossível, suponho. Mas, para um menino peqeuno, ainda atordoado com o choque da perda dos pais...</p>
+
+         <p><em>Continua...</em></p>
+        </section>
+
+           <!-- <- FECHA CAPÍTULO 25 -->
+
+           <!-- ========== AVISO ========== -->
+        <section>
+           <header class="cabecalho-aviso"> 
+            <h2 class="titulo-aviso">AVISO</h2>
+        </header>
+        <div class="aviso-compra" id="aviso-compra">
+    <div class="aviso-content">
+        <h3>📖 Continue a Jornada!</h3>
+        
+        <div class="livro-capa">
+            <div class="capa-imagem"></div>
+            <div class="livro-info">
+                <h4>O Nome do Vento</h4>
+                <p>Patrick Rothfuss</p>
+                <p class="paginas">Capítulos 26-92 disponíveis no livro físico</p>
+            </div>
+        </div>
+        
+        <p class="aviso-texto">
+            Você leu os primeiros 25 capítulos desta adaptação para estudo.<br>
+            Para continuar a história de Kvothe e descobrir todos os segredos, 
+            adquira o livro completo!
+        </p>
+        
+        <div class="botoes-compra">
+            <a href="https://www.amazon.com.br/nome-vento-Cr%C3%B4nica-Matador-Livro-ebook/dp/B00A3CSX7M" 
+               target="_blank" 
+               class="btn-compra amazon">
+                📦 Comprar na Amazon
+            </a>
+            <a href="VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMk1DcC94bEFiNFEyYWpVci9xNWRORjZBK3B1MGs1MnBWSEdDVXVJaHhObVhoTENURXplb3c2UjlzZllDRFZQcGwyc0xKQzFucnBZNDI2anM5N3JsdVZjMzJueWZuaXArY1NZdFpXOHRKMVVnPT0" 
+               target="_blank" 
+               class="btn-compra saraiva">
+                🏪 Comprar na Shopee
+            </a>
+        </div>
+        
+        <p class="small-text">
+            Este projeto é apenas para fins educacionais e de estudo.<br>
+            Apoie o autor adquirindo a obra original.
+        </p>
+    </div>
+</section>
+
+<!-- ========== GLOSSÁRIO COMPLETO ========== -->
+<section id="glossario">
+    <header>
+        <h2>📖 Glossário de "O Nome do Vento"</h2>
+    </header>
+    
+    <div class="aviso-spoiler">
+        ⚠️ <strong>Atenção:</strong> Este glossário contém termos de toda a obra - pode conter spoilers!
+    </div>
+    
+    <!-- TABELA 1: LUGARES E ORGANIZAÇÕES -->
+    <table class="tabela-glossario">
+        <thead>
+            <tr class="cabecalho-categoria">
+                <th colspan="2">🏛️ Lugares e Organizações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="termo">Universidade</td>
+                <td class="definicao">Instituição de ensino superior onde se estuda arcanismo, alquimia, medicina e outras disciplinas</td>
+            </tr>
+            <tr>
+                <td class="termo">Imre</td>
+                <td class="definicao">Cidade próxima à Universidade, frequentada por estudantes. Local do Eólio</td>
+            </tr>
+            <tr>
+                <td class="termo">Edema Ruh</td>
+                <td class="definicao">Trupe de artistas itinerantes, povo nômade de Kvothe. Conhecidos como grandes contadores de histórias e artistas</td>
+            </tr>
+            <tr>
+                <td class="termo">Tarbean</td>
+                <td class="definicao">Grande cidade portuária onde Kvothe passou parte de sua infância nas ruas</td>
+            </tr>
+            <tr>
+                <td class="termo">A Comunidade (Commonwealth)</td>
+                <td class="definicao">Reino onde se passam grande parte dos eventos da história</td>
+            </tr>
+            <tr>
+                <td class="termo">O Eólio</td>
+                <td class="definicao">Taverna/casa de música em Imre onde músicos podem tocar</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 2: MAGIA E CONCEITOS -->
+    <table class="tabela-glossario">
+        <thead>
+            <tr class="cabecalho-categoria">
+                <th colspan="2">🧙‍♂️ Magia e Conceitos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="termo">Arcanismo</td>
+                <td class="definicao">Sistema de magia baseado em conhecimento científico e força de vontade</td>
+            </tr>
+            <tr>
+                <td class="termo">Simpatia</td>
+                <td class="definicao">Prática arcana que cria ligações entre objetos para transferir energia ou efeitos</td>
+            </tr>
+            <tr>
+                <td class="termo">Nomeação</td>
+                <td class="definicao">Arte antiga e poderosa de conhecer e falar o verdadeiro nome das coisas</td>
+            </tr>
+            <tr>
+                <td class="termo">Alar</td>
+                <td class="definicao">Força de vontade necessária para realizar simpatia; força mental do arcanista</td>
+            </tr>
+            <tr>
+                <td class="termo">Sigaldria (Sygaldry)</td>
+                <td class="definicao">Sistema de runas e inscrições que capturam efeitos mágicos permanentes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 3: PERSONAGENS E GRUPOS -->
+    <table class="tabela-glossario">
+        <thead>
+            <tr class="cabecalho-categoria">
+                <th colspan="2">👥 Personagens e Grupos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="termo">Chandrian</td>
+                <td class="definicao">Grupo misterioso e temido de sete seres com poderes sobrenaturais, responsáveis pela tragédia na vida de Kvothe</td>
+            </tr>
+            <tr>
+                <td class="termo">Amyr</td>
+                <td class="definicao">Ordem antiga de guerreiros/justiceiros que supostamente não existe mais. "Para o bem maior"</td>
+            </tr>
+            <tr>
+                <td class="termo">Os Mestres</td>
+                <td class="definicao">Professores da Universidade, cada um especialista em sua área de conhecimento</td>
+            </tr>
+            <tr>
+                <td class="termo">Kvothe</td>
+                <td class="definicao">Protagonista e narrador, arcanista prodígio de origem Edema Ruh. Dono da Estalagem Pedra no Caminho</td>
+            </tr>
+            <tr>
+                <td class="termo">Bast</td>
+                <td class="definicao">Ajudante e aluno de Kvothe na estalagem, aparentemente mais do que parece</td>
+            </tr>
+            <tr>
+                <td class="termo">Denna (Dianne)</td>
+                <td class="definicao">Jovem misteriosa e encantadora por quem Kvothe se apaixona. Muda frequentemente de nome</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 4: TERMOS ACADÊMICOS -->
+    <table class="tabela-glossario">
+        <thead>
+            <tr class="cabecalho-categoria">
+                <th colspan="2">🎓 Termos Acadêmicos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="termo">E'lir</td>
+                <td class="definicao">Posto de estudante iniciante na Universidade (estudante)</td>
+            </tr>
+            <tr>
+                <td class="termo">Re'lar</td>
+                <td class="definicao">Segundo nível de estudante na Universidade (aluno que conhece)</td>
+            </tr>
+            <tr>
+                <td class="termo">El'the</td>
+                <td class="definicao">Nível avançado de estudante (aluno conhecedor)</td>
+            </tr>
+            <tr>
+                <td class="termo">Admissão</td>
+                <td class="definicao">Processo de entrevista com os mestres para determinar mensalidade</td>
+            </tr>
+            <tr>
+                <td class="termo">Ferro de Arcanista</td>
+                <td class="definicao">Anel de ferro marcado com guilloché que identifica membros do Arcanum</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- <- FECHA GLOSSÁRIO -->
+
+<!-- ========== TABELAS ORGANIZADAS ========== -->
+<section id="tabelas">
+    <header>
+        <h2>📊 Dados Organizados da Obra</h2>
+    </header>
+
+    <!-- TABELA 1: CRONOLOGIA -->
+   <table>
+    <caption>
+        ⏳ Linha do Tempo de Kvothe
+        <br>
+        <img src="assets/imagem/trupe 4.png" alt="Trupe Edema Ruh" class="Trupe">
+    </caption>
+        <thead>
+            <tr>
+                <th>Fase</th>
+                <th>Evento Principal</th>
+                <th>Local</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Infância</td>
+                <td>Vida com a trupe Edema Ruh</td>
+                <td>Estradas da Comunidade</td>
+                <td>Passado</td>
+            </tr>
+            <tr>
+                <td>Adolescência</td>
+                <td>Sobrevivência em Tarbean</td>
+                <td>Cidade portuária de Tarbean</td>
+                <td>Passado</td>
+            </tr>
+            <tr>
+                <td>Juventude</td>
+                <td>Ingresso na Universidade</td>
+                <td>Universidade</td>
+                <td>Narrativa principal</td>
+            </tr>
+            <tr>
+                <td>Presente</td>
+                <td>Trabalha como hospedeiro</td>
+                <td>Estalagem Pedra no Caminho</td>
+                <td>Presente</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 2: PERSONAGENS -->
+    <table>
+        <caption>👥 Personagens Principais</caption>
+        <thead>
+            <tr>
+                <th>Personagem</th>
+                <th>Papel</th>
+                <th>Primeira Aparição</th>
+                <th>Importância</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+    <td><img src="assets/imagem/kovthe1.png" alt="Kvothe" class="pixel-personagem"> Kvothe (Kote)</td>
+                <td>Protagonista e narrador</td>
+                <td>Capítulo 1</td>
+                <td>Principal</td>
+                <td>Dono da estalagem, conta sua história</td>
+            </tr>
+            <tr>
+    <td><img src="assets/imagem/bast.png" alt="Bast" class="pixel-personagem"> Bast</td>
+                <td>Ajudante e aluno de Kvothe</td>
+                <td>Capítulo 1</td>
+                <td>Secundário</td>
+                <td>Trabalha na estalagem, leal a Kvothe</td>
+            </tr>
+          <tr>
+    <td><img src="assets/imagem/cronista.png" alt="Cronista (Devan Lochees)" class="pixel-personagem">Cronista (Devan Lochees</td>
+                <td>Escriba que registra a história</td>
+                <td>Capítulo 2</td>
+                <td>Secundário</td>
+                <td>Famoso por registrar histórias verdadeiras</td>
+            </tr>
+           <tr>
+    <td><img src="assets/imagem/taverneiro.png" alt="Cob" class="pixel-personagem"> Cob</td>
+                <td>Cliente da estalagem</td>
+                <td>Capítulo 1</td>
+                <td>Terciário</td>
+                <td>Contador de histórias local</td>
+            </tr>
+           <tr>
+    <td><img src="assets/imagem/jake.png" alt="Jake" class="pixel-personagem">Jake</td>
+                <td>Cliente da estalagem</td>
+                <td>Capítulo 1</td>
+                <td>Terciário</td>
+                <td>Ferreiro da região</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 3: SISTEMAS MÁGICOS -->
+    <table>
+    <caption>
+        🧙‍♂️ Sistemas Mágicos
+        <br>
+        <img src="assets/imagem/readme-image.png" alt="Magia e Música" class="Magia e Música">
+    </caption>
+        <thead>
+            <tr>
+                <th>Sistema</th>
+                <th>Descrição</th>
+                <th>Dificuldade</th>
+                <th>Status</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Simpatia</td>
+                <td>Arte de vincular objetos para transferir energia ou efeitos</td>
+                <td>Requer estudo intenso e alar forte</td>
+                <td>Praticado na Universidade</td>
+                <td>Criar fogo usando calor de outro objeto</td>
+            </tr>
+            <tr>
+                <td>Nomeamento</td>
+                <td>Conhecer e falar o nome verdadeiro das coisas</td>
+                <td>Extremamente raro e difícil</td>
+                <td>Arte antiga quase perdida</td>
+                <td>Comandar o vento, o fogo ou outros elementos</td>
+            </tr>
+            <tr>
+                <td>Artificiaria</td>
+                <td>Criação de objetos mágicos permanentes</td>
+                <td>Requer conhecimento técnico avançado</td>
+                <td>Ensinado na Universidade</td>
+                <td>Lâmpadas simpáticas, gramas de proteção</td>
+            </tr>
+            <tr>
+                <td>Alquimia</td>
+                <td>Estudo de substâncias e suas propriedades</td>
+                <td>Médio a alto</td>
+                <td>Disciplina acadêmica</td>
+                <td>Criação de remédios e compostos</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABELA 4: LUGARES IMPORTANTES -->
+    <table>
+        <caption>🏛️ Lugares Importantes</caption>
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th>Região</th>
+                <th>Importância</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+    <td><img src="assets/imagem/estalagem-pedra-no-camiho.png" alt="Pousada Pedra no Caminho" class="Pedra no Caminho"> Pousada Pedra no Caminho</td>
+                <td>Interior da Comunidade</td>
+                <td>Onde Kvothe conta sua história</td>
+                <td>Presente narrativo</td>
+            </tr>
+            <tr>
+    <td><img src="assets/imagem/university.png" alt="Universidade" class="Universidade"> Universidade</td>
+                <td>Próxima a Imre</td>
+                <td>Principal local de estudo de Kvothe</td>
+                <td>Passado narrativo</td>
+            </tr>
+            <tr>
+    <td><img src="assets/imagem/imre.png" alt="Imre" class="Imre">Imre</td>
+                <td>Cidade universitária</td>
+                <td>Cidade frequentada por estudantes</td>
+                <td>Passado narrativo</td>
+            </tr>
+            <tr>
+    <td><img src="assets/imagem/tarbeen-cidade-portuaria.png" alt="Tarbean" class="Tarbean"> Tarbean</td>
+                <td>Grande cidade portuária</td>
+                <td>Onde Kvothe viveu nas ruas</td>
+                <td>Passado narrativo</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- <- FECHA TABELAS -->
+
+<!-- ========== FORMULÁRIO DE DIÁRIO DE LEITURA ========== -->
+
+<section id="diario-leitura">
+  <h2>📖 Meu Diário de Leitura</h2>
+  
+  <form class="formulario-diario">
+    <!-- CAPÍTULO E DATA (JÁ EXISTENTES) -->
+    <div class="campo">
+      <label for="capitulo-atual">📚 Capítulo atual:</label>
+      <input type="number" id="capitulo-atual" name="capitulo" min="1" max="150" value="1">
+    </div>
+    
+    <div class="campo">
+      <label for="data-leitura">📅 Data da leitura:</label>
+      <input type="date" id="data-leitura" name="data">
+    </div>
+
+    <!-- 🆕 CHECKBOXES -->
+    <div class="campo">
+      <fieldset>
+        <legend>🏷️ Marque o que se aplica:</legend>
+        <label><input type="checkbox" name="tags" value="emocionante"> 💖 Emocionante</label>
+        <label><input type="checkbox" name="tags" value="suspense"> 😱 Cheio de suspense</label>
+        <label><input type="checkbox" name="tags" value="magia"> ✨ Cenas de magia</label>
+        <label><input type="checkbox" name="tags" value="personagens"> 👥 Desenvolvimento de personagens</label>
+      </fieldset>
+    </div>
+
+    <!-- 🆕 RADIO BUTTONS -->
+    <div class="campo">
+      <fieldset>
+        <legend>⭐ Como você avalia este capítulo?</legend>
+        <label><input type="radio" name="avaliacao" value="5" required> ⭐⭐⭐⭐⭐ Excelente</label>
+        <label><input type="radio" name="avaliacao" value="4"> ⭐⭐⭐⭐ Muito bom</label>
+        <label><input type="radio" name="avaliacao" value="3"> ⭐⭐⭐ Bom</label>
+        <label><input type="radio" name="avaliacao" value="2"> ⭐⭐ Regular</label>
+        <label><input type="radio" name="avaliacao" value="1"> ⭐ Ruim</label>
+      </fieldset>
+    </div>
+
+    <!-- 🆕 SELECT -->
+    <div class="campo">
+      <label for="estado-animo">🎭 Estado de ânimo durante a leitura:</label>
+      <select id="estado-animo" name="estado_animo">
+        <option value="">-- Selecione --</option>
+        <option value="animada">😊 Animada e empolgada</option>
+        <option value="reflexiva">🤔 Reflexiva e pensativa</option>
+        <option value="emocionada">🥺 Emocionada ou comovida</option>
+      </select>
+    </div>
+
+    <!-- 🆕 RANGE -->
+    <div class="campo">
+      <label for="compreensao">
+        🧠 Nível de compreensão da trama: 
+        <output id="valor-compreensao">50%</output>
+      </label>
+      <input type="range" id="compreensao" name="compreensao" min="0" max="100" value="50">
+    </div>
+
+    <!-- ANOTAÇÕES -->
+    <div class="campo">
+      <label for="anotacoes">💭 Minhas anotações e impressões:</label>
+      <textarea id="anotacoes" name="anotacoes" rows="5" placeholder="O que achei deste capítulo..."></textarea>
+    </div>
+    
+    <!-- BOTÃO -->
+    <div class="campo">
+      <button type="submit">💾 Salvar no Meu Diário</button>
+    </div>
+  </form>
+</section>
+<!-- <- FECHA FORMULÁRIO DIÁRIO DE LEITURA -->               
+<!-- No final do body, antes de fechar -->
+<script src="script.js"></script>
+</body>
+</html>

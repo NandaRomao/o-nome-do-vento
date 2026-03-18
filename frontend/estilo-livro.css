@@ -1,0 +1,1001 @@
+/* === CORES OFICIAIS DO PROJETO === */
+/* COR BASE - FUNDO PERGAMINHO */
+body {
+    background-color: #f5f1e8;
+    color: #614e30;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* === CONTEÚDO PRINCIPAL - CORRIGIDO E CENTRALIZADO === */
+.conteudo-principal {
+    margin-left: 240px;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #b18005 #f5f1e8;
+}
+
+.conteudo-principal::-webkit-scrollbar {
+    width: 12px;
+}
+
+.conteudo-principal::-webkit-scrollbar-track {
+    background: #f5f1e8;
+    border-radius: 10px;
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb {
+    background-color: #b18005;
+    border-radius: 10px;
+    border: 2px solid #f5f1e8;
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb:hover {
+    background-color: #d4a006;
+}
+
+/* === 🟢 CONTAINER VERDE === */
+.cabecalho-verde {
+    background-color: rgba(19, 32, 32, 0.98);
+    color: #f5f1e8;
+    padding: 40px 20px;
+    margin: -40px -40px 40px -40px;
+    text-align: center;
+    border-bottom: 3px solid #b18005;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho-verde .container-interno {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cabecalho-verde img {
+    border: 3px solid #b18005;
+    border-radius: 8px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 25px auto;
+    display: block;
+    max-width: 250px;
+    height: auto;
+}
+
+.cabecalho-verde h1 {
+    color: #e6ae20;
+    font-size: 2.3em;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.cabecalho-verde h2 {
+    color: #d4c4a8;
+    font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin: 15px 0 10px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.cabecalho-verde h3 {
+    color: #e6ae20;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cabecalho-verde p {
+    color: #f5f1e8;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* === SEÇÕES === */
+#sobre {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #b18005;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#introducao {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#glossario, #tabelas, #diario-leitura {
+    max-width: 800px;
+    margin: 80px auto 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: none;
+}
+
+/* === CAPÍTULOS === */
+section[id^="capitulo"] {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+section[id^="capitulo"] .cabecalho-capitulo {
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #b18005;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+section[id^="capitulo"] p {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0 30px;
+    border-left: 4px solid #b18005;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section[id^="capitulo"] p:first-of-type {
+    padding-top: 15px;
+}
+
+section[id^="capitulo"] p:last-of-type {
+    padding-bottom: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === SEÇÃO DE AVISO DE COMPRA === */
+#aviso-compra {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#aviso-compra .cabecalho-aviso {
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #b18005;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.cabecalho-aviso .titulo-aviso {
+    color: #692214;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.aviso-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-left: 4px solid #b18005;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aviso-content h3 {
+    color: #193232;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Informações do livro */
+.livro-capa {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(25, 50, 50, 0.05);
+    border-radius: 8px;
+    border: 1px solid #b18005;
+}
+
+.livro-info h4 {
+    color: #193232;
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.livro-info p {
+    color: #614e30;
+    margin: 5px 0;
+    text-indent: 0;
+}
+
+.livro-info .paginas {
+    color: #b18005;
+    font-style: italic;
+}
+
+/* Texto do aviso */
+.aviso-texto {
+    text-align: center;
+    color: #614e30;
+    line-height: 1.8;
+    margin: 25px 0;
+    font-size: 1.05em;
+    text-indent: 0;
+}
+
+/* BOTÕES DE COMPRA - UM EMBAIXO DO OUTRO */
+.botoes-compra {
+    display: flex;
+    flex-direction: column; /* 👈 COLOCA UM EMBAIXO DO OUTRO */
+    gap: 15px; /* Espaço entre os botões */
+    margin: 30px 0;
+    padding: 0;
+}
+
+.btn-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border: 2px solid #b18005;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%; /* 👈 LARGURA COMPLETA */
+    box-sizing: border-box;
+}
+
+/* BOTÃO AMAZON */
+.btn-compra.amazon {
+    background-color: #FF9900;
+    color: #232f3e;
+}
+
+.btn-compra.amazon:hover {
+    background-color: #232f3e;
+    color: #FF9900;
+    border-color: #FF9900;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+}
+
+/* BOTÃO SHOPEE */
+.btn-compra.saraiva {
+    background-color: #ee4d2d;
+    color: #ffffff;
+}
+
+.btn-compra.saraiva:hover {
+    background-color: #ffffff;
+    color: #ee4d2d;
+    border-color: #ee4d2d;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(238, 77, 45, 0.4);
+}
+
+/* BOTÃO MERCADO LIVRE */
+.btn-compra.mercadolivre {
+    background-color: #FFE600;
+    color: #333333;
+}
+
+.btn-compra.mercadolivre:hover {
+    background-color: #333333;
+    color: #FFE600;
+    border-color: #FFE600;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 230, 0, 0.4);
+}
+
+/* Texto pequeno */
+.small-text {
+    text-align: center;
+    font-size: 0.85em;
+    color: #614e30;
+    font-style: italic;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-indent: 0;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    .livro-capa {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .botoes-compra {
+        gap: 12px;
+    }
+    
+    .btn-compra {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aviso-content {
+        padding: 20px;
+    }
+    
+    .btn-compra {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
+
+/* === TÍTULOS === */
+h1 {
+    color: #b18005d5;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #193232;
+    border-bottom: 2px solid #d4c4a8;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cabecalho-capitulo {
+    text-align: center;
+    margin: 40px 0 30px 0;
+    background: linear-gradient(to right, transparent, rgba(230, 174, 32, 0.1), transparent);
+    padding: 20px;
+}
+
+.numero-capitulo {
+    font-size: 1.1em;
+    color: #193232;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.titulo-capitulo {
+    color: #692214;
+    margin-top: 5px;
+    font-size: 1.8em;
+}
+
+/* === PARÁGRAFOS === */
+.capitulo p,
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+    font-size: 1.05em;
+    text-indent: 2em;
+    color: #614e30;
+}
+
+.importante {
+    color: #a72d24;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    border-top: 2px solid #b18005;
+    border-bottom: 2px solid #b18005;
+}
+
+/* === MENU LATERAL === */
+.sidebar {
+    background-color: rgba(19, 32, 32, 0.98);
+    border-right: 3px solid #b18005;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #b18005;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: #e6ae20;
+    border-bottom: 2px solid #b18005;
+    padding-bottom: 15px;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 35px;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #000003;
+}
+
+.sidebar h4 {
+    color: #d4c4a8;
+    font-size: 0.95em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #b18005;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 6px 0;
+    position: relative;
+    padding-left: 20px;
+    min-height: 20px;
+}
+
+.sidebar li::before {
+    content: "◇";
+    color: #b18005;
+    font-size: 1.2em;
+    padding: 4px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+.sidebar a {
+    color: #d4c4a8;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar a:hover {
+    color: #e6ae20;
+    padding-left: 10px;
+}
+
+/* ========== ESTILOS DO USUÁRIO ========== */
+.user-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(177, 128, 5, 0.3);
+}
+
+.user-section h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #b18005;
+    text-align: center;
+}
+
+#user-name-input {
+    padding: 0.5rem;
+    border: 2px solid #b18005;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.user-section button {
+    background: #b18005;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.user-section button:hover {
+    background: #9a6e04;
+}
+
+#user-info p {
+    margin: 0 0 0.5rem 0;
+    color: white;
+}
+
+/* ========== FIM ESTILOS DO USUÁRIO ========== */
+
+/* === CONTATO SIDEBAR === */
+.separador-menu {
+    border: none;
+    border-top: 2px solid #b18005;
+    margin: 30px 10px;
+    opacity: 0.8;
+}
+
+.contato-sidebar {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 15px 30px;
+    border-top: 2px solid #b18005;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.contato-sidebar h4 {
+    color: #e6ae20;
+    margin-bottom: 15px;
+    font-size: 1em;
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+}
+
+.links-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: rgba(177, 128, 5, 0.15);
+    border: 1px solid rgba(177, 128, 5, 0.4);
+    border-radius: 5px;
+    color: #d4c4a8;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+}
+
+.btn-contato:hover {
+    background: rgba(230, 174, 32, 0.25);
+    border-color: #e6ae20;
+    transform: translateX(5px);
+    color: #e6ae20;
+    padding-left: 12px;
+}
+
+.btn-contato .icone {
+    font-size: 1.1em;
+}
+
+.btn-contato.linkedin:hover {
+    border-color: #0077b5;
+    background: rgba(0, 119, 181, 0.15);
+}
+
+.btn-contato.github:hover {
+    border-color: #6e5494;
+    background: rgba(110, 84, 148, 0.15);
+}
+
+.btn-contato.email:hover {
+    border-color: #ea4335;
+    background: rgba(234, 67, 53, 0.15);
+}
+
+.citacao-sidebar {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #b18005;
+    border-radius: 4px;
+}
+
+.citacao-sidebar p {
+    color: #d4c4a8;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+    text-indent: 0;
+}
+
+.citacao-sidebar cite {
+    color: #e6ae20;
+    font-size: 0.75em;
+    font-style: normal;
+}
+
+.creditos-sidebar {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(177, 128, 5, 0.3);
+}
+
+.creditos-sidebar p {
+    color: #d4c4a8;
+    font-size: 0.8em;
+    margin: 8px 0;
+    text-indent: 0;
+}
+
+.creditos-sidebar .dev-note {
+    font-size: 0.7em;
+    color: rgba(212, 196, 168, 0.7);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* === TABELAS DO GLOSSÁRIO === */
+.tabela-glossario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: 2px solid #b18005;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-glossario .cabecalho-categoria {
+    background-color: #b18005;
+}
+
+.tabela-glossario .cabecalho-categoria th {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 15px;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tabela-glossario .termo {
+    background-color: #f5e6c8;
+    color: #614e30;
+    font-weight: bold;
+    padding: 12px 15px;
+    width: 30%;
+    border-bottom: 1px solid #b18005;
+    vertical-align: top;
+}
+
+.tabela-glossario .definicao {
+    background-color: transparent;
+    color: #614e30;
+    padding: 12px 15px;
+    border-bottom: 1px solid #b18005;
+    line-height: 1.6;
+}
+
+.tabela-glossario tbody tr:last-child .termo,
+.tabela-glossario tbody tr:last-child .definicao {
+    border-bottom: none;
+}
+
+.tabela-glossario tbody tr:hover .termo {
+    background-color: #f0d9a8;
+}
+
+.tabela-glossario tbody tr:hover .definicao {
+    background-color: rgba(245, 230, 200, 0.3);
+}
+
+.aviso-spoiler {
+    color: #a72d24;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+/* === MENU HAMBÚRGUER === */
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    background: rgba(19, 32, 32, 0.95);
+    border: 2px solid #b18005;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+    background: rgba(19, 32, 32, 1);
+    border-color: #e6ae20;
+}
+
+.hamburger span {
+    width: 20px;
+    height: 2px;
+    background: #e6ae20;
+    margin: 2px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    .menu-mobile {
+        display: block;
+    }
+    
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        width: 280px;
+    }
+    
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 60px 20px 20px 20px;
+    }
+    
+    .cabecalho-verde {
+        padding: 20px 15px;
+        margin: 0 0 30px 0;
+    }
+    
+    .cabecalho-verde h1 {
+        font-size: 1.8em;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .contato-sidebar {
+        margin-top: 20px;
+        padding: 15px 10px;
+    }
+    
+    .btn-contato {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+    
+    .tabela-glossario .termo {
+        width: 35%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    .tabela-glossario .definicao {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    .tabela-glossario .cabecalho-categoria th {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabela-glossario .termo,
+    .tabela-glossario .definicao {
+        display: block;
+        width: 100%;
+    }
+    
+    .tabela-glossario .termo {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    .tabela-glossario .definicao {
+        padding-top: 5px;
+    }
+}
+/* === TABELAS DE DADOS ORGANIZADOS === */
+
+/* Tabelas normais (não glossário) */
+#tabelas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    border: 2px solid #193232; /* Verde do menu */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Caption (título da tabela) */
+#tabelas caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #193232;
+    padding: 15px;
+    text-align: center;
+    background: rgba(25, 50, 50, 0.05);
+}
+
+/* Cabeçalho da tabela */
+#tabelas thead {
+    background-color: #193232; /* Verde do menu */
+}
+
+#tabelas th {
+    color: #e6ae20; /* Dourado claro */
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #193232;
+}
+
+/* Células da tabela */
+#tabelas td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #193232; /* Verde */
+    color: #614e30;
+    vertical-align: middle;
+}
+
+/* Última linha sem borda inferior */
+#tabelas tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Efeito hover nas linhas */
+#tabelas tbody tr:hover {
+    background-color: rgba(25, 50, 50, 0.05);
+}
+
+/* Textos em negrito dentro das tabelas */
+#tabelas td strong,
+#tabelas td b {
+    color: #e6ae20; /* Dourado claro */
+    font-weight: bold;
+}
+
+/* === PIXEL ARTS NAS TABELAS === */
+.img-titulo-tabela {
+    display: block;
+    margin: 15px auto 0;
+    max-width: 150px;
+    height: auto;
+}
+
+.pixel-personagem,
+.pixel-lugar {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    #tabelas table {
+        font-size: 0.9em;
+    }
+    
+    #tabelas th,
+    #tabelas td {
+        padding: 8px 10px;
+    }
+    
+    .img-titulo-tabela {
+        max-width: 100px;
+    }
+    
+    .pixel-personagem,
+    .pixel-lugar {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #tabelas caption {
+        font-size: 1em;
+    }
+    
+    #tabelas table {
+        font-size: 0.85em;
+    }
+}
+/* === CENTRALIZAR IMAGENS E NOMES EM TODAS AS TABELAS === */
+
+/* Primeira coluna com imagens - CENTRALIZADA e MAIS LARGA */
+#tabelas table tbody tr td:first-child {
+    text-align: center !important;
+    vertical-align: middle !important;
+    min-width: 180px; /* 👈 Aumenta o espaço */
+    padding: 15px; /* 👈 Mais padding */
+}
+
+/* Imagens mantêm tamanho original */
+#tabelas td img.pixel-personagem,
+#tabelas td img.pixel-lugar {
+    display: block !important;
+    margin: 0 auto 8px auto !important;
+    width: auto; /* 👈 Mantém tamanho original */
+    height: auto; /* 👈 Mantém tamanho original */
+    max-width: 120px; /* 👈 Limite máximo */
+}
+
+/* Demais colunas */
+#tabelas table tbody tr td:not(:first-child) {
+    text-align: left;
+    vertical-align: middle;
+}
