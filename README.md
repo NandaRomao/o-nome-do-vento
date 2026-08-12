@@ -155,17 +155,24 @@ document.querySelectorAll('nav a').forEach(link => {
 ## 📁 Estrutura do Projeto
 
 ```
-nome-do-vento/
-├── 📄 index.html                 # Página principal
-├── 🎨 estilo-livro.css           # Estilos principais
-├── ⚡ script.js                  # JavaScript completo
-├── 📄 README.md                  # Documentação
-└── 📁 assets/
-    ├── 📁 images/
-    │   ├── 🎮 pixel-arts/        # Arte digital exclusiva
-    │   └── 📸 screenshots/       # Capturas para documentação
-    └── 📁 data/                  # Futuros arquivos de dados
+o-nome-do-vento/
+├── 📄 README.md                  # Documentação geral
+├── 📁 frontend/
+│   ├── 📄 index.html             # Página principal
+│   ├── 📄 login.html             # Página de login (localStorage)
+│   ├── 🎨 estilo-livro.css       # Estilos principais
+│   ├── ⚡ script.js              # JavaScript completo
+│   └── 📁 assets/
+│       └── 📁 imagem/            # Pixel arts e screenshots
+└── 📁 backend/                   # Protótipo experimental (não conectado)
+    ├── 📄 README.md              # Explica o status do backend
+    ├── ⚡ server.js               # Node.js/Express
+    ├── 📄 package.json
+    └── 📄 package-lock.json
 ```
+
+> ⚠️ O `backend/` é um protótipo de estudo e **não está conectado** ao `login.html`,
+> que hoje funciona apenas com `localStorage`. Veja `backend/README.md` para detalhes.
 
 ---
 
