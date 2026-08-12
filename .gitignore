@@ -1,0 +1,9 @@
+# Dependências
+node_modules/
+
+# Arquivos de metadados do sistema
+desktop.ini
+.DS_Store
+
+# Variáveis de ambiente
+.env
